@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -28,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=League+Script&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -57,7 +56,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse pt-md-2 justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav font-m h6 d-flex">
+                    <ul class="navbar-nav font-m h6 d-flex nav-text">
                         <li class="nav-item">
                             <!--<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>-->
                             <a class="nav-link active" href="#">ABOUT</a>
@@ -66,7 +65,7 @@
                             <a class="nav-link active" href="#">EVENTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">NEWSLETTER</a>
+                            <a class="nav-link active" href="#newsletter-section">NEWSLETTER</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">BECOME A MENTOR</a>
@@ -80,23 +79,28 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid ">
 
-        <img src="assets/images/newsletter-icon.PNG" id="newsletter-icon" class="img-fluid" alt="newsletter icon" />
+        <a href="#newsletter-section">
+            <img src="assets/images/newsletter-icon.PNG" id="newsletter-icon"
+                class="img-fluid border-0 animate__animated animate__bounceIn animate__delay-3s"
+                alt="newsletter icon" />
+        </a>
 
         <!-- -------------- -->
         <!-- Above the fold -->
         <!-- -------------- -->
 
         <div class="row" id="law-school">
-            <div class="col-12 col-md-5 offset-0 offset-md-1 p-0">
+            <div class="col-12 col-md-5 offset-0 offset-md-1 p-0 animate__animated animate__fadeInUp">
                 <!-- TODO Putting the typography as an image could be an accessability issue. Is the alt enough? -->
                 <div class="mx-3">
                     <img src="assets/images/what-law-school.PNG" class="img-fluid"
                         alt="What Law School doesn't teach you (there's a lot!). For Every Law student and Lawyer who wants to accelerate their career">
                 </div>
-                <div class="row">
-                    <button id="join-button" class="btn bg-orange text-light px-3 px-sm-5 py-4 mt-4 mb-5 my-lg-5 mx-3">
+                <div class="row ">
+                    <button id="join-button"
+                        class="btn bg-orange font-m text-light px-3 px-sm-5 py-4 mt-4 mb-5 my-lg-5 mx-3">
                         JOIN THE COMMUNITY NOW
                     </button>
                     <div id="subscribe-for-free">
@@ -107,7 +111,7 @@
                 </div>
 
             </div>
-            <div class="col-md-5 offset-md-1 text-right">
+            <div class="col-md-5 offset-md-1 text-right animate__animated animate__fadeInDown">
                 <img src="assets/images/header-clipart.png" id="student-img" class="img-fluid mr-5"
                     alt="Student using computer clipart">
             </div>
@@ -125,7 +129,7 @@
             <div class="row bg-orange">
                 <div class="col-10 offset-2 font-m h3 rounded">
                     <div class="row my-4 text-light">
-                        <div class="col-6 col-md-4 col-lg-2 offset-2 offset-md-0 p-0">
+                        <div class="col-6 col-md-7 col-lg-2 offset-2 offset-lg-0  p-0">
                             <div class="circle animate__animated animate__zoomIn animate__delay-2s">
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
@@ -138,7 +142,7 @@
                             </div>
                             <h5 class="font-le text-center">Community of law students and lawyers</h5>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2 offset-2 offset-lg-2 p-0">
+                        <div class="col-6 col-md-7 col-lg-2 offset-2 offset-lg-2 p-0">
                             <div class="circle animate__animated animate__zoomIn animate__delay-1s">
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
@@ -150,7 +154,7 @@
                             </div>
                             <h5 class="font-le text-center">Attendees during our monthly webinars</h5>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2 offset-2 offset-lg-2 p-0">
+                        <div class="col-6 col-md-7 col-lg-2 offset-2 offset-lg-2 p-0">
                             <div class="circle animate__animated animate__zoomIn">
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
@@ -177,12 +181,12 @@
             <h1 id="about-heading" class="d-inline border-small-line text-orange section-heading">
                 ABOUT
             </h1>
-            <h2 id="what-is-mentor-in-law" class="d-inline text-muted section-subheading mt-3">
+            <h2 id="about-subheading" class="d-inline text-muted section-subheading mt-3">
                 WHAT IS MENTOR IN LAW?
             </h2>
 
             <div class="row" id="about-content">
-                <div class="col-12 col-lg-4 offset-lg-1 text-center">
+                <div class="col-12 col-lg-4 offset-lg-1 text-center font-a-bold">
                     <p class="about-text">
                         Law schools are churning out lawyers of
                         yesterday instead of tomorrow. There is a
@@ -201,7 +205,7 @@
                     </p>
                 </div>
                 <div class="col-0 col-lg-1 border-line"></div>
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-5 font-a-light">
                     <div class="row my-4">
                         <div class="col-3 offset-1 offset-lg-2">
                             <img src="assets/icons/1.png" class="img-fluid">
@@ -243,7 +247,7 @@
 
         <div class="row mb-5">
             <div class="col-12 col-lg-4 offset-lg-7 text-center">
-                <h3 class="text-muted mt-3 section-subheading">...and more coming soon!</h3>
+                <h3 id="and-more-to-come" class="text-muted mt-3 section-subheading">...and more coming soon!</h3>
             </div>
         </div>
 
@@ -261,7 +265,7 @@
         </div>
 
         <div class="row">
-            <div id="next-up-event-container" class="col-12 col-lg-3 offset-lg-1 p-3 text-light">
+            <div id="next-up-event-container" class="col-12 col-lg-3 offset-lg-1 p-4 text-light">
                 <h2><span class="text-orange">07 </span>APRIL 2021</h2>
                 <p id="next-up-event-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Nam iste
@@ -340,6 +344,7 @@
         <!-- ------------ -->
         <!-- TESTIMONIALS -->
         <!-- ------------ -->
+
         <div id="testimonials-section">
             <div class="row" id="testimonials-heading-container">
                 <div class="col-12 col-lg-6 border-small-line d-flex justify-content-center justify-content-lg-end">
@@ -348,7 +353,7 @@
                     </h1>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <h2 class="text-muted ml-1 ml-lg-3 section-subheading">
+                    <h2 class="text-muted ml-1 ml-lg-3 section-subheading mt-1">
                         WHAT LAW STUDENTS AND LAWYERS
                         <br class="d-none d-lg-inline-block" />
                         ARE SAYING ABOUT MENTOR IN LAW
@@ -375,7 +380,7 @@
                                     Mentor in Law is pure gold.
                                     <i class="fa fa-quote-right mr-3 text-orange"></i>
                                 </p>
-                                <h6 class="font-m mt-5">Tech lawyer</h6>
+                                <h6 class="font-m mt-5 testimonial-attribution">TECH LAWYER</h6>
                             </div>
                         </div>
                     </div>
@@ -388,7 +393,7 @@
                                     Wish something like this existed when I was starting out. Thank you!
                                     <i class="fa fa-quote-right mr-3 text-orange"></i>
                                 </p>
-                                <h6 class="font-m mt-5">Law school career services</h6>
+                                <h6 class="font-m mt-5 testimonial-attribution">LAW SCHOOL CAREER SERVICES</h6>
                             </div>
                         </div>
                     </div>
@@ -404,7 +409,7 @@
                                     on the phone, I feel so much more empowered and informed.
                                     <i class="fa fa-quote-right mr-3 text-orange"></i>
                                 </p>
-                                <h6 class="font-m mt-5">1L law student</h6>
+                                <h6 class="font-m mt-5 testimonial-attribution">1L LAW STUDENT</h6>
                             </div>
                         </div>
                     </div>
@@ -419,7 +424,7 @@
                                     graduating—would have saved me a lot of heartache.
                                     <i class="fa fa-quote-right mr-3 text-orange"></i>
                                 </p>
-                                <h6 class="font-m mt-5">Lawyer turned journalist</h6>
+                                <h6 class="font-m mt-5 testimonial-attribution">LAWYER TURNED JOURNALIST</h6>
                             </div>
                         </div>
                     </div>
@@ -433,7 +438,7 @@
                                     appreciate that you consider holistic diversity, including diversity of thought.
                                     <i class="fa fa-quote-right mr-3 text-orange"></i>
                                 </p>
-                                <h6 class="font-m mt-5">2L law student</h6>
+                                <h6 class="font-m mt-5 testimonial-attribution">2L LAW STUDENT</h6>
                             </div>
                         </div>
                     </div>
@@ -458,9 +463,10 @@
 
         <div class="row my-5">
             <div class="col-12 col-lg-4 offset-0 offset-lg-1 text-center">
-                <h3 class="mentorship-program-subtext">COMING SOON</h3>
-                <h1 class="section-heading text-orange my-3">MENTORSHIP <br /> PROGRAM</h1>
-                <h3 class="mentorship-program-subtext">SIGN UP TO BE A MENTOR</h3>
+                <h3 class="mentorship-program-subtext font-l">COMING SOON</h3>
+                <h1 id="mentorship-heading" class="section-heading text-orange my-3 font-l">MENTORSHIP <br /> PROGRAM
+                </h1>
+                <h3 class="mentorship-program-subtext font-le">SIGN UP TO BE A MENTOR</h3>
                 <button id="mentor-profile-button" class="btn bg-orange text-light px-3 py-2 my-4 mx-3">
                     CREATE MY PROFILE <img src="assets/images/right-arrow.png" id="create-profile-arrow-img"
                         class="img-fluid mt-lg-1 ml-lg-1" alt="right arrow">
@@ -482,14 +488,14 @@
                     mentorship program.
                 </p>
             </div>
-            <div class="col-1"></div>
+            <div id="newsletter-section" class="col-1"></div>
         </div>
 
         <!-- ---------- -->
         <!-- Newsletter -->
         <!-- ---------- -->
 
-        <div class="row" id="newsletter-section">
+        <div class="row">
             <div class="col-12">
                 <div class="text-center">
                     <h1 class="section-heading text-orange mt-5">SIGN UP FOR OUR NEWSLETTER</h1>
@@ -539,7 +545,7 @@
                                                 <button class="btn btn-link collapsed font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseOne"
                                                     aria-expanded="false" aria-controls="collapseOne">
-                                                    What is Mentor in Law?
+                                                    <span class="faq-button">What is Mentor in Law? </span>
                                                 </button>
                                             </h5>
                                         </div>
@@ -565,7 +571,7 @@
                                                 <button class="btn btn-link collapsed  font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo">
-                                                    Why did we create Mentor in Law?
+                                                    <span class="faq-button">Why did we create Mentor in Law?</span>
                                                 </button>
                                             </h5>
                                         </div>
@@ -639,7 +645,7 @@
                                                 <button class="btn btn-link collapsed  font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseThree"
                                                     aria-expanded="false" aria-controls="collapseThree">
-                                                    Who is Mentor in Law for?
+                                                    <span class="faq-button">Who is Mentor in Law for?</span>
                                                 </button>
                                             </h5>
                                         </div>
@@ -667,14 +673,15 @@
                                                 <button class="btn btn-link collapsed  font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseFour"
                                                     aria-expanded="false" aria-controls="collapseFour">
-                                                    How do I sign up for the events and newsletter?
+                                                    <span class="faq-button">How do I sign up for the events and
+                                                        newsletter?</span>
                                                 </button>
                                             </h5>
                                         </div>
                                         <div id="collapseFour" class="collapse" data-parent="#accordionExample">
                                             <div class="card-body">
                                                 <h5 class="pt-3 font-weight-normal font-l">
-                                                    You can sign up by clicking <a href="#newsletter">here</a>
+                                                    You can sign up by clicking <a href="#newsletter-section">here</a>
                                                     </p>
                                             </div>
                                         </div>
@@ -697,11 +704,12 @@
 
     <div class="bg-orange section-margin">
         <div class="col-10 offset-1 pt-5">
-            <h1 class="mb-5 display-4 font-le text-light section-heading spacing text-center">
+            <h1 id="logo-heading" class="mb-5 font-le text-light section-heading spacing text-center">
                 OUR MENTORS IN LAW COME FROM...
                 <!--WHERE OUR MENTORS AND MENTEES COME FROM-->
             </h1>
-            <h2 class="text-light section-subheading text-center">Our mentors are from leading international law firms,
+            <h2 id="logo-subheading" class="text-light section-subheading text-center">Our mentors are from leading
+                international law firms,
                 government agencies, law schools, Fortune 500 companies, and more</h2>
         </div>
 
@@ -755,12 +763,12 @@
     <!-- Footer -->
     <!-- ------ -->
 
-    <footer class="bg-dark text-light text-center text-lg-start py-3">
+    <footer class="bg-dark text-light text-center text-lg-start">
         <!-- Grid container -->
-        <div class="p-4">
+        <div class="">
             <!--Grid row-->
             <div class="row">
-                <div class="col-12 offset-lg-1 col-lg-3">
+                <div class="col-12 offset-lg-1 col-lg-3 py-5">
                     <h5 class="text-uppercase text-center footer-text">Mentor in Law</h5>
 
                     <p class="text-center footer-text">
@@ -779,17 +787,39 @@
                         lawyer.
                     </p>
                 </div>
-                <div class="col-12 col-lg-2 my-3">
+                <div class="col-12 col-lg-2 my-3 py-5">
                     <h5 class="text-uppercase">Links</h5>
 
                     <div class="">
-                        <a href="#!" class="text-light h3 link-img"><i class="fab fa-linkedin"></i></a>
-                        <a href="#!" class="text-light h3 link-img ms-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#!" class="text-light h3 link-img ms-2"><i class="fab fa-youtube"></i></a>
-                        <a href="#!" class="text-light h3 link-img ms-2"><i class="fas fa-podcast"></i></a>
+                        <ul>
+                            <li class="py-1">
+                                <a href="https://www.linkedin.com/groups/13880288/" class="text-light link-img h3"><i
+                                        class="fab fa-linkedin"></i>
+                                    <span class="link h6"> LinkedIn Group</span></a>
+                            </li>
+                            <li class="py-1">
+                                <a href="https://www.linkedin.com/company/mentorinlaw/" class="text-light link-img h3"><i
+                                        class="fab fa-linkedin"></i>
+                                    <span class="link h6"> LinkedIn</span></a>
+                            </li>
+                            <li class="py-1">
+                                <a href="http://instagram.com/mentorsinlaw" class="text-light link-img h3"><i
+                                        class="fab fa-instagram"></i>
+                                    <span class="link h6"> Instagram</span></a>
+                            </li>
+                            <li class="py-1">
+                                <a href="https://www.youtube.com/channel/UCOnU8mOPJwt-MNx_huWkwKQ" class="text-light link-img h3"><i
+                                        class="fab fa-youtube"></i>
+                                    <span class="link h6"> Youtube</span></a>
+                            </li>
+                            <li class="py-1">
+                                <a href="https://anchor.fm/mentorinlaw" class="text-light link-img h3"><i class="fas fa-podcast"></i>
+                                    <span class="link h6"> Podcast</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-12 col-lg-2 my-3">
+                <div class="col-12 col-lg-2 my-3 py-5">
                     <h5 class="text-uppercase mb-0">Resources</h5>
 
                     <ul class="list-unstyled mt-2">
@@ -806,7 +836,7 @@
                     </ul>
                 </div>
                 <div class="col-0 col-lg-2 d-none d-lg-inline-block">
-                    <h5 class="text-uppercase">Upcoming events</h5>
+                    <!-- <h5 class="text-uppercase">Upcoming events</h5> -->
 
                     <div class="mt-2">
                         <div id="caro">

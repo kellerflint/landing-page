@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 
 var Carousel = {
     width: 300,     // items are forced into a width of this many pixels.
-    numVisible: 3,  // The number of items visible at once.
+    numVisible: 4,  // The number of items visible at once.
     duration: 600,  // Animation duration in milliseconds.
     padding: 2      // Vertical padding around each image, in pixels.
 };

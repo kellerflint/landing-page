@@ -40,8 +40,9 @@ body {
 }
 
 .section-subheading {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 400;
+    letter-spacing: 5px;
 }
 
 @media screen and (max-width: 992px) {
@@ -65,14 +66,21 @@ body {
 /* Newsletter icon */
 
 #newsletter-icon {
+    border: 1px solid rgb(166, 166, 166);
+    background-color: rgb(166, 166, 166);
+    border-radius: 100%;
     width: 75px;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 15px;
+    bottom: 15px;
     z-index: 1;
 }
 
-/* Fonts */
+/* Fonts & Links */
+
+.link:hover {
+    text-decoration: underline;
+}
 
 .font-m {
     font-family: 'Montserrat';
@@ -82,15 +90,25 @@ body {
 
 @font-face {
     font-family: 'league_spartanbold';
-    src: url('/css/fonts/league_spartan/leaguespartan-bold-webfont.woff2') format('woff2'),
-         url('/css/fonts/league_spartan/leaguespartan-bold-webfont.woff') format('woff');
+    src: url('fonts/league_spartan/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('fonts/league_spartan/leaguespartan-bold-webfont.woff') format('woff');
          font-weight: normal;
          font-style: normal;
 }
 
-.font-a{
+@font-face {
+    font-family: 'buffalo';
+    src: url('fonts/Buffalo.woff') format("woff");
+}
+
+.font-a-bold{
     font-family: 'Alice', serif !important;
     font-weight: 900;
+}
+
+.font-a-light{
+    font-family: 'Alice', serif !important;
+    font-weight: 500;
 }
 
 .font-m {
@@ -115,7 +133,7 @@ body {
 }
 
 .font-b{
-    font-family: 'buffalo_scriptregular',  Arial, sans-serif !important;
+    font-family: 'buffalo',  Arial, sans-serif !important;
 }
 
 .font-ds{
@@ -173,6 +191,11 @@ body {
     z-index: 1;
 }
 
+.nav-text {
+    font-weight: 500;
+    letter-spacing: 1.1;
+}
+
 /* Progress Bar */
 
 .progress-container {
@@ -191,7 +214,7 @@ body {
 /* Above the fold */
 
 #law-school {
-    margin-top: 130px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -201,9 +224,11 @@ body {
 }
 
 #join-button {
-    width: 60%;
+    font-size: 1.1em;
+    width: 65%;
     border-radius: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 2.2px;
+    font-weight: 500;
 }
 
 #arrow-gif {
@@ -211,6 +236,8 @@ body {
 }
 
 #subscribe-for-free {
+    font-family: 'buffalo';
+    font-size: 1.5em;
     text-align: center;
     width: 160px;
     padding-left: 0;
@@ -225,6 +252,14 @@ body {
 @media screen and (max-width: 992px) {
     #law-school {
         margin-top: 25px;
+    }
+
+    #join-button {
+        font-size: .9em;
+        width: 65%;
+        border-radius: 10px;
+        letter-spacing: 2.2px;
+        font-weight: 500;
     }
 }
 
@@ -394,9 +429,13 @@ body {
     width: 220px;
 }
 
-#what-is-mentor-in-law {
-    width: 400px;
+#about-subheading {
+    width: 600px;
     margin-left: 10px;
+}
+
+#and-more-to-come {
+    letter-spacing: 2.5px;
 }
 
 @media screen and (max-width: 992px) {
@@ -412,7 +451,7 @@ body {
         font-size: 1.4em;
     }
 
-    #what-is-mentor-in-law {
+    #about-subheading {
         width: 100%;
         margin-left: 0px;
     }
@@ -448,6 +487,10 @@ body {
 
 /* Events */
 
+#event-section {
+    margin-top: 80px;
+}
+
 #events-heading {
     width: 470px;
     margin-bottom: 60px;
@@ -463,12 +506,7 @@ body {
     height: 90px;
     overflow: hidden;
     margin-bottom: 20px;
-}
-
-@media screen and (max-width: 992px) {
-    .event-item {
-        width: 100%;
-    }
+    margin-right: 20px;
 }
 
 #next-up-event-container {
@@ -478,6 +516,7 @@ body {
 
 #next-up-event-text {
     height: 55%;
+    color:rgb(180, 180, 180);
 }
 
 .event-countdown-item {
@@ -490,6 +529,7 @@ body {
 
 .countdown-label {
     font-size: .7em;
+    color:rgb(180, 180, 180);
 }
 
 .countdown-number {
@@ -513,29 +553,41 @@ body {
     border-radius: 20px;
 }
 
-#days-start {
-    margin-left: 35px;
-}
+@media screen and (max-width: 992px) {
+    .event-item {
+        width: 100%;
+    }
 
-#hours-start {
-    margin-left: 35px;
-}
+    #events-heading {
+        margin-bottom: 0px;
+    }
 
-#seconds-start {
-    margin-left: 35px;
+    #events-subheading {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #next-up-event-container {
+        margin-bottom: 30px;
+    }
 }
 
 /* Testimonials */
+
+.testimonial-attribution {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 
 #testimonials-carousel {
     height: 320px;
 }
 
 .carousel-indicators li {
-    border-radius: 16px;
     width: 16px;
     height: 16px;
     background-color: rgb(211,211,211);
+    border-radius: 100%;
 }
 
 .carousel-indicators .active{
@@ -548,6 +600,7 @@ body {
 
 .testimonials-text {
     font-size: 1.4em;
+    letter-spacing: 1.5px;
 }
 
 #testimonials-section {
@@ -556,12 +609,17 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+    #testimonials-carousel {
+        height: 380px;
+    }
+
     #testimonials-heading-container {
         margin-top: 40px;
         margin-bottom: 30px;
     }
 
     #testimonials-section {
+        margin-top: 0px;
         margin-bottom: 60px;
     }
 
@@ -573,7 +631,8 @@ body {
 /* Mentorship Program */
 
 #we-love-mentorship {
-    font-size: 2em;
+    font-family: 'buffalo';
+    font-size: 3.7em;
 }
 
 #create-profile-arrow-img {
@@ -585,15 +644,22 @@ body {
     border-radius: 10px;
     font-size: 1.5em;
     letter-spacing: 1.2px;
+    font-weight: 300;
 }
 
 .mentorship-text {
     font-size: 1.4em;
 }
 
+#mentorship-heading {
+    letter-spacing: 2px;
+}
+
 .mentorship-program-subtext {
     font-size: 1.3em;
     font-weight: 400;
+    letter-spacing: 3px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 992px) {
@@ -805,6 +871,22 @@ ul {
     padding-bottom: 23px;
     color: rgba(30, 48, 86, 0.8);
     line-height: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .faq-button {
+        font-size: .7em;
+    }
+}
+
+/* Logos */ 
+
+#logo-heading {
+    letter-spacing: 3px;
+}
+
+#logo-subheading {
+    letter-spacing: 1.2px;
 }
 
 /* Footer Mentor in Law text */
