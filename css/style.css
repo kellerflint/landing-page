@@ -183,14 +183,6 @@ body {
     min-width: 200px;
 }
 
-#beta {
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    font-size: .9em;
-    z-index: 1;
-}
-
 .nav-text {
     font-weight: 500;
     letter-spacing: 1.1;
@@ -574,6 +566,10 @@ body {
 
 /* Testimonials */
 
+.testimonial-arrow {
+    width: 120px;
+}
+
 .testimonial-attribution {
     font-weight: bold;
     letter-spacing: 2px;
@@ -610,7 +606,7 @@ body {
 
 @media screen and (max-width: 992px) {
     #testimonials-carousel {
-        height: 380px;
+        height: 340px;
     }
 
     #testimonials-heading-container {
@@ -626,6 +622,22 @@ body {
     .testimonials-text {
         font-size: 1em;
     }
+}
+
+.carousel-indicators {
+    position: relative;
+    padding: 0px !important;
+}
+
+.carousel-control-prev {
+    position: relative;
+    padding-right: 0px;
+
+}
+
+.carousel-control-next {
+    position: relative;
+    padding-left: 0px;
 }
 
 /* Mentorship Program */
@@ -667,6 +679,14 @@ body {
         border-radius: 10px;
         font-size: 1.15em;
         letter-spacing: 1.2px;
+    }
+
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next {
+        display: none;
     }
 }
 
