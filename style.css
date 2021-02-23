@@ -1,0 +1,760 @@
+/* Landing Page (General) */
+
+body {
+    background-color: #FEF9F2;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    overflow-x: hidden;
+}
+
+.bg-orange {
+    background-color: #f1491f;
+}
+
+.text-orange {
+    color: #f1491f;
+}
+
+.border-line {
+    border-right: 4px solid rgb(166, 166, 166);
+}
+
+.border-small-line {
+    border-right: 3px solid rgb(166, 166, 166);
+    padding-right: 15px;
+}
+
+.bg-offwhite {
+    background-color: #FEF9F2;
+}
+
+.section-heading {
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+.section-subheading {
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+#about-heading {
+    width: 220px;
+}
+
+#what-is-mentor-in-law {
+    width: 400px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .border-small-line {
+        border-right: none;
+    }
+
+    .border-line {
+        border-right: none;
+    }
+
+    .section-heading {
+        font-size: 2.5em;
+    }
+
+    .section-subheading {
+        font-size: 1.5em;
+    }
+
+    #what-is-mentor-in-law {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+/* Newsletter icon */
+
+#newsletter-icon {
+    width: 75px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+/* Fonts */
+
+.font-m {
+    font-family: 'Montserrat';
+    font-weight: 1500;
+}
+
+
+@font-face {
+    font-family: 'league_spartanbold';
+    src: url('/css/fonts/league_spartan/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('/css/fonts/league_spartan/leaguespartan-bold-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+}
+
+.font-a{
+    font-family: 'Alice', serif !important;
+    font-weight: 900;
+}
+
+.font-m {
+    font-family: 'Montserrat';
+    font-weight: 1500;
+}
+
+.font-r {
+    font-family: 'Raleway';
+}
+
+.font-s {
+    font-family: 'Spartan', sans-serif;
+}
+
+.font-le {
+    font-family: 'league_spartanbold', Arial, sans-serif;
+}
+
+.font-l {
+    font-family: 'Lato', sans-serif;
+}
+
+.font-b{
+    font-family: 'buffalo_scriptregular',  Arial, sans-serif !important;
+}
+
+.font-ds{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+}
+
+.font-a{
+    font-family: 'Alice', serif !important;
+    font-weight: 900;
+}
+
+.font-beige {
+    color: #FEF9F2;
+}
+
+.font-gray {
+    color: #767676;
+}
+
+.font-32{
+    font-size: 32px;
+}
+.font-36{
+    font-size: 36px;
+}
+.font-65{
+    font-size: 66px !important;
+    letter-spacing: 2px;
+}
+.font-68{
+    font-size: 68px !important;
+}
+.font-big{
+    font-size: 8rem;
+}
+.m-5r{
+  margin-left: 5rem;
+}
+.m-9{
+    margin-left: 9rem;
+}
+
+/* Navigation */
+
+#nav-img {
+    min-width: 200px;
+}
+
+#beta {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: .9em;
+    z-index: 1;
+}
+
+/* Progress Bar */
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #FEF9F2;
+}
+
+.progress-bar {
+  height: .8em;
+  background: #f1491f !important;
+  width: 0%;
+}
+
+
+/* Above the fold */
+
+#law-school {
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+#student-img {
+    max-width: 500px;
+    width: 100%;
+}
+
+#join-button {
+    width: 60%;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+#arrow-gif {
+    width: 65px;
+}
+
+#subscribe-for-free {
+    text-align: center;
+    width: 160px;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    #subscribe-for-free {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #law-school {
+        margin-top: 25px;
+    }
+}
+
+/* Down Arrow */
+
+.arrow {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 60px; /*change with size of arrow to make sit on bottom */
+  /*   background-image: url(); */
+  /*   background-size: contain; */
+  }
+  
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .arrow {
+      visibility: hidden;
+      clear: both;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+      display: none;
+    }
+  }
+
+/* Number Circles */
+
+.circle {
+    position: relative;
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 50%;
+    /* border-color: #f1491f; */
+    border-color: #FEF9F2;
+    border-width: .5em;
+    text-align: center;
+}
+
+.circle:after {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    content: "";
+}
+  
+.circle__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+.circle__wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+  
+.circle__content {
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+@media (min-width: 480px) {
+    .circle__content {
+      font-size: 2em;
+    }
+}
+  
+@media (min-width: 768px) {
+    .circle__content {
+      font-size: 4em;
+    }
+}
+
+.icon-circle {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #f1491f;
+    box-shadow: 0px 0px 2px #f1491f;
+    padding: 0.6em 0.6em;
+}
+
+/* About */
+
+.about-text {
+    font-size: 1.6em;
+}
+
+.about-description {
+    font-size: 1.2em;
+}
+
+#about-container {
+    margin-top: 80px;
+}
+
+#about-content {
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 992px) {
+    #about-container {
+        margin-top: 25px;
+    }
+
+    #about-content {
+        margin-top: 25px;
+    }
+
+    .about-text {
+        font-size: 1.4em;
+    }   
+}
+
+/* Typewriter Effect */
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #FEF9F2;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: #333;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink .5s infinite;
+}
+.cursor.typing {
+    animation: none;
+}
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+
+
+/* Testimonials */
+
+#testimonials-carousel {
+    height: 320px;
+}
+
+.carousel-indicators li {
+    border-radius: 16px;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(211,211,211);
+}
+
+.carousel-indicators .active{
+    background-color: #f1491f;
+}
+
+#testimonials-heading-container {
+    margin-bottom: 80px;
+}
+
+.testimonials-text {
+    font-size: 1.4em;
+}
+
+#testimonials-section {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 992px) {
+    #testimonials-heading-container {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    #testimonials-section {
+        margin-bottom: 60px;
+    }
+
+    .testimonials-text {
+        font-size: 1em;
+    }
+}
+
+/* Mentorship Program */
+
+#we-love-mentorship {
+    font-size: 2em;
+}
+
+#create-profile-arrow-img {
+    vertical-align: top;
+    width: 30px;
+}
+
+#mentor-profile-button {
+    border-radius: 10px;
+    font-size: 1.5em;
+    letter-spacing: 1.2px;
+}
+
+.mentorship-text {
+    font-size: 1.4em;
+}
+
+.mentorship-program-subtext {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+    #mentor-profile-button {
+        border-radius: 10px;
+        font-size: 1.15em;
+        letter-spacing: 1.2px;
+    }
+}
+
+/* Newsletter */
+
+#newsletter-section {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+@media screen and (max-width: 992px) {
+    #newsletter-section {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+.group { 
+	position: relative; 
+	margin-bottom: 45px; 
+}
+
+input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+    background-color: #FEF9F2;
+	display: block;
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+input:focus { 
+    outline: none; 
+}
+
+label {
+	color: #999; 
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: all 0.2s ease;
+}
+
+input:focus ~ label, input.used ~ label {
+	top: -20px;
+  transform: scale(.75); left: -2px;
+	/* font-size: 14px; */
+	color: #f1491f;
+}
+
+.bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px; 
+	width: 0;
+	bottom: 1px; 
+	position: absolute;
+	background: #f1491f; 
+	transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
+.submit{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: 0 auto -15px auto;
+    background: black;
+    border-radius: 100%;
+    border: 1px solid black;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.submit:hover {
+    background-color: #f1491f;
+    color: #fff;
+    outline: 0;
+    border: 1px solid #f1491f;
+}
+
+
+/* FAQ */
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.faq .section-title {
+    margin-bottom: 54px;
+}
+
+.faq .section-title h2 {
+    margin-bottom: 22px;
+}
+
+.faq .accordion .card {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.faq .accordion .card:not(:first-of-type) .card-header:first-child {
+    border-radius: 10px;
+}
+
+.faq .accordion .card .card-header {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.faq .accordion .card .card-header h5 {
+    padding: 0;
+}
+
+.faq .accordion .card .card-header h5 button {
+    color: #1e3056;
+    font-weight: 500;
+    font-size: 1.17em;
+    text-decoration: none;
+    padding: 0 30px 0 70px;
+    height: 5em;
+    display: block;
+    width: 100%;
+    color: rgba(30, 48, 86, 0.8);
+    text-align: left;
+    background: #fff;
+    -webkit-box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+    box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.faq .accordion .card .card-header h5 button:after {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    color: #f1491f;
+    text-align: center;
+    border: 1px solid #f1491f;
+    border-radius: 50%;
+    line-height: 100%;
+    content: '\f067';
+    font-size: 10px;
+    line-height: 18px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.faq .accordion .card .card-header h5 button.collapsed {
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(97, 125, 255, 0.2);
+}
+
+.faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
+    content: '\f068';
+    color: #fff;
+    background-image: -webkit-linear-gradient(-180deg, #ff5f74 0%, #ff5f74 30%, #ff5f74 100%);
+}
+
+.faq .accordion .card .card-body {
+    -webkit-box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
+    box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
+    border-radius: 0 0 10px 10px;
+    padding-top: 0;
+    margin-top: -6px;
+    padding-left: 72px;
+    padding-right: 70px;
+    padding-bottom: 23px;
+    color: rgba(30, 48, 86, 0.8);
+    line-height: 30px;
+}
+
+/* Footer Mentor in Law text */
+
+.footer-text {
+    width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+    .footer-text {
+        width: 100%;
+    }
+}
+
+/* Footer Vertical carousel */
+
+#carouselWrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#caro {
+    position: absolute;
+    visibility: hidden;
+}
+
+.carous {
+    border: 1px solid #FEF9F2;
+}
+
