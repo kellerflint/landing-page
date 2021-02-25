@@ -599,7 +599,6 @@ body {
 }
 #next-up-event-container, #display-events {
     margin-bottom: 30px;
-    margin-left: 0em !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -620,9 +619,12 @@ body {
         letter-spacing: 0em;
         text-align: center;
     }
-    #next-up-event-container{
-        margin-left: auto;
-        margin-right: auto;
+    #next-up-event-container {
+        margin-left: 0em !important;
+    }
+
+    #display-events {
+        margin-left: 0em !important;
     }
 }
 
@@ -993,6 +995,12 @@ ul {
 
 
 /* Footer Mentor in Law text */
+
+.no-overflow {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: 0 !important;
+}
 
 .footer-text {
     width: 90%;
