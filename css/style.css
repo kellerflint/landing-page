@@ -652,6 +652,11 @@ body {
     margin-top: 120px;
     margin-bottom: 100px;
 }
+#testimonials-sub-header{
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: .3em;
+}
 
 @media screen and (max-width: 992px) {
     #testimonials-carousel {
@@ -670,6 +675,10 @@ body {
 
     .testimonials-text {
         font-size: 1em;
+    }
+    #testimonials-sub-header{
+        letter-spacing: 0em !important;
+        text-align: center !important;
     }
 }
 
@@ -993,6 +1002,17 @@ ul {
     }
     .mb-logos{
         margin-bottom: 1.5em;
+    }
+    #footer-text2{
+        font-size: .5em;
+    }
+    #logo-heading{
+        margin-bottom: 1em !important;
+        font-size: 1.3em;
+    }
+    #logo-subheading{
+        margin-bottom: 2em;
+        font-size: .8em;
     }
 }
 
