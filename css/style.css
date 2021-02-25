@@ -22,6 +22,10 @@ body {
     color: #f1491f;
 }
 
+.text-offwhite {
+    color: #FEF9F2;
+}
+
 .border-line {
     border-right: 4px solid rgb(166, 166, 166);
 }
@@ -66,13 +70,14 @@ body {
 /* Newsletter icon */
 
 #newsletter-icon {
-    border: 1px solid rgb(166, 166, 166);
+    border: 1px solid #FEF9F2;
     background-color: rgb(166, 166, 166);
     border-radius: 100%;
-    width: 75px;
+    width: 4em;
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+    right: 1em;
+    bottom: 1em;
+    box-shadow: 2px 2px 3px #999;
     z-index: 1;
 }
 
