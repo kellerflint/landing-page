@@ -38,9 +38,9 @@ const thousand = document.getElementById("value1");
 const hundred = document.getElementById("value2");
 const ten = document.getElementById("value3");
 
-animateValue(thousand, 0, 1000, 4200);
-animateValue(hundred, 0, 450, 3600);
-animateValue(ten, 0, 80, 3000);
+animateValue(thousand, 0, 1200, 4200);
+animateValue(hundred, 0, 550, 3600);
+animateValue(ten, 0, 100, 3000);
 
 $(document).ready(function () {
     var $horizontal = $('#horizontal');
