@@ -8,6 +8,23 @@ function myFunction() {
     document.getElementById("progress-bar").style.width = scrolled + "%";
 }
 
+// Navbar image swap
+$(document).ready(function() {
+    // Navigation color change 
+    $(window).scroll(function() {
+    var nav_img = $('.navbar-brand img');
+    if ($(document).scrollTop() < 50) {
+        $('nav').addClass('transparent');
+        nav_img.attr("src","assets/images/MiL-Logo.png");
+        nav_img.attr("height", "20");
+    } else {
+        $('nav').removeClass('transparent').css('color: black');
+        nav_img.attr("src","assets/images/Gavel-Logo.png");
+        nav_img.attr("height", "30");
+    }
+    });
+});
+
 // Down Arrow
 
 window.onscroll = function () { myFunction() };

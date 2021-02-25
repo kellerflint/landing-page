@@ -37,6 +37,7 @@ body {
 .bg-offwhite {
     background-color: #FEF9F2;
 }
+
 .nav-item{
     margin-right: .5em;
 }
@@ -240,6 +241,10 @@ body {
     padding-left: 0;
 }
 
+#beta-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
     #subscribe-for-free {
         display: none;
@@ -273,8 +278,16 @@ body {
         display: block;
         margin-left: auto;
         margin-right: auto
-        }
-    
+    }
+
+    #beta-full {
+        display: none;
+    }
+
+    #beta-mobile {
+        display: block;
+    }
+
 }
 
 /* Down Arrow */
