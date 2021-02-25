@@ -37,16 +37,19 @@ body {
 .bg-offwhite {
     background-color: #FEF9F2;
 }
+.nav-item{
+    margin-right: .5em;
+}
 
 .section-heading {
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3em;
 }
 
 .section-subheading {
     font-size: 1.5em;
     font-weight: 400;
-    letter-spacing: 5px;
+    letter-spacing: .3em;
 }
 
 @media screen and (max-width: 992px) {
@@ -87,12 +90,6 @@ body {
     text-decoration: underline;
 }
 
-.font-m {
-    font-family: 'Montserrat';
-    font-weight: 1500;
-}
-
-
 @font-face {
     font-family: 'league_spartanbold';
     src: url('fonts/league_spartan/leaguespartan-bold-webfont.woff2') format('woff2'),
@@ -117,12 +114,12 @@ body {
 }
 
 .font-m {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat' !important;
     font-weight: 1500;
 }
 
 .font-r {
-    font-family: 'Raleway';
+    font-family: 'Raleway' !important;
 }
 
 .font-s {
@@ -130,11 +127,11 @@ body {
 }
 
 .font-le {
-    font-family: 'league_spartanbold', Arial, sans-serif;
+    font-family: 'league_spartanbold', Arial, sans-serif !important;
 }
 
 .font-l {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important;
 }
 
 .font-b{
@@ -142,7 +139,7 @@ body {
 }
 
 .font-ds{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive !important;
     font-weight: 900;
 }
 
@@ -180,6 +177,9 @@ body {
 }
 .m-9{
     margin-left: 9rem;
+}
+.spacing{
+    letter-spacing: .07em !important;
 }
 
 /* Navigation */
@@ -244,6 +244,14 @@ body {
     #subscribe-for-free {
         display: none;
     }
+    #join-button {
+        font-size: .8em;
+        width: 75%;
+        padding: .7em;
+        border-radius: 10px;
+        letter-spacing: 2.2px;
+        font-weight: 500;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -252,12 +260,21 @@ body {
     }
 
     #join-button {
-        font-size: .9em;
+        font-size: .8em;
         width: 65%;
         border-radius: 10px;
         letter-spacing: 2.2px;
         font-weight: 500;
+        margin-left: 18% !important;
+        height: 4em;
     }
+    #student-img{
+        width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+        }
+    
 }
 
 /* Down Arrow */
@@ -277,6 +294,9 @@ body {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
+  }
+  #marg-circ{
+      margin-left: 15%;
   }
 
 @-moz-keyframes bounce {
@@ -336,6 +356,9 @@ body {
       margin: 10px auto 5px 20px;
       width: 28%;
       display: none;
+    }
+    #numbers-text{
+        font-size: .6em;
     }
   }
 
@@ -423,7 +446,8 @@ body {
 }
 
 #about-heading {
-    width: 220px;
+    width: 4.5em;
+    margin-left: 3%;
 }
 
 #about-subheading {
@@ -447,10 +471,17 @@ body {
     .about-text {
         font-size: 1.4em;
     }
+    #about-heading{
+        width: 100%;
+        text-align: center !important;
+        margin: 0em;
+    }
 
     #about-subheading {
         width: 100%;
         margin-left: 0px;
+        letter-spacing: 0em;
+
     }
 }
 
@@ -486,16 +517,20 @@ body {
 
 #event-section {
     margin-top: 80px;
+    margin-bottom: 2em;
 }
 
 #events-heading {
-    width: 470px;
+    width: 11em;
     margin-bottom: 60px;
+    margin-left: 3%;
+    font-size: 2.7em;
 }
 
 #events-subheading {
-    margin-top: 20px;
-    width: 400px;
+    font-size: 1.5em;
+    width: 20em;
+    letter-spacing: .3em;
 }
 
 .event-item {
@@ -549,6 +584,10 @@ body {
     background-color: #ffe6e0;
     border-radius: 20px;
 }
+#next-up-event-container, #display-events {
+    margin-bottom: 30px;
+    margin-left: 0em !important;
+}
 
 @media screen and (max-width: 992px) {
     .event-item {
@@ -556,16 +595,21 @@ body {
     }
 
     #events-heading {
-        margin-bottom: 0px;
+        margin-bottom: .5em;
+        margin-left: 0em;
+        width: 100%;
+        text-align: center;
     }
 
     #events-subheading {
         margin-top: 10px;
         margin-bottom: 30px;
+        letter-spacing: 0em;
+        text-align: center;
     }
-
-    #next-up-event-container {
-        margin-bottom: 30px;
+    #next-up-event-container{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -669,7 +713,7 @@ body {
 }
 
 #mentorship-heading {
-    letter-spacing: 2px;
+    letter-spacing: .1em;
 }
 
 .mentorship-program-subtext {
@@ -677,6 +721,7 @@ body {
     font-weight: 400;
     letter-spacing: 3px;
     font-weight: 500;
+    margin-top: 3em;
 }
 
 @media screen and (max-width: 992px) {
@@ -898,6 +943,10 @@ ul {
     line-height: 30px;
 }
 
+.faq-button{
+    text-transform: none;
+}
+
 @media screen and (max-width: 992px) {
     .faq-button {
         font-size: .7em;
@@ -916,6 +965,11 @@ ul {
     font-size: 1.2em;
 }
 
+#company-logos-section{
+    margin-left: 5em !important;
+}
+
+
 /* Footer Mentor in Law text */
 
 .footer-text {
@@ -925,6 +979,20 @@ ul {
 @media screen and (max-width: 992px) {
     .footer-text {
         width: 100%;
+    }
+    #footer-mentor{
+        margin-left: 0em !important;
+        padding-bottom: .1em !important;
+    }
+    #links-footer{
+        padding-bottom: .1em !important; 
+    }
+    #company-logos-section{
+        margin-left: 2.3em !important;
+        width: 80%;
+    }
+    .mb-logos{
+        margin-bottom: 1.5em;
     }
 }
 
