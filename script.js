@@ -9,19 +9,19 @@ function myFunction() {
 }
 
 // Navbar image swap
-$(document).ready(function() {
+$(document).ready(function () {
     // Navigation color change 
-    $(window).scroll(function() {
-    var nav_img = $('.navbar-brand img');
-    if ($(document).scrollTop() < 50) {
-        $('nav').addClass('transparent');
-        nav_img.attr("src","assets/images/MiL-Logo.png");
-        nav_img.attr("height", "20");
-    } else {
-        $('nav').removeClass('transparent').css('color: black');
-        nav_img.attr("src","assets/images/Gavel-Logo.png");
-        nav_img.attr("height", "30");
-    }
+    $(window).scroll(function () {
+        var nav_img = $('.navbar-brand img');
+        if ($(document).scrollTop() < 50) {
+            $('nav').addClass('transparent');
+            nav_img.attr("src", "assets/images/MiL-Logo.png");
+            nav_img.attr("height", "20");
+        } else {
+            $('nav').removeClass('transparent').css('color: black');
+            nav_img.attr("src", "assets/images/Gavel-Logo.png");
+            nav_img.attr("height", "30");
+        }
     });
 });
 
@@ -123,8 +123,9 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 
 // Vertical Carousel
 
+
 var Carousel = {
-    width: 300,     // items are forced into a width of this many pixels.
+    width: document.documentElement.clientWidth * .288,     // items are forced into a width of this many pixels.
     numVisible: 4,  // The number of items visible at once.
     duration: 600,  // Animation duration in milliseconds.
     padding: 2      // Vertical padding around each image, in pixels.
