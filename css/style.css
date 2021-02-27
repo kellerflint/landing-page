@@ -37,6 +37,7 @@ body {
 .bg-offwhite {
     background-color: #FEF9F2;
 }
+
 .nav-item{
     margin-right: .5em;
 }
@@ -240,6 +241,10 @@ body {
     padding-left: 0;
 }
 
+#beta-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
     #subscribe-for-free {
         display: none;
@@ -275,8 +280,16 @@ body {
         display: block;
         margin-left: auto;
         margin-right: auto
-        }
-    
+    }
+
+    #beta-full {
+        display: none;
+    }
+
+    #beta-mobile {
+        display: block;
+    }
+
 }
 
 /* Down Arrow */
@@ -588,7 +601,6 @@ body {
 }
 #next-up-event-container, #display-events {
     margin-bottom: 30px;
-   
 }
 
 @media screen and (max-width: 992px) {
@@ -609,10 +621,13 @@ body {
         letter-spacing: 0em;
         text-align: center;
     }
+
     #next-up-event-container{
         margin-left: 0em !important;
     }
-    #display-events{
+
+    #display-events {
+
         margin-left: 0em !important;
     }
 }
@@ -987,6 +1002,12 @@ ul {
 
 
 /* Footer Mentor in Law text */
+
+.no-overflow {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: 0 !important;
+}
 
 .footer-text {
     width: 90%;
