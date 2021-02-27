@@ -245,12 +245,13 @@ body {
         display: none;
     }
     #join-button {
-        font-size: .8em;
+        font-size: .7em;
         width: 75%;
-        padding: .7em;
+        padding: .9em;
         border-radius: 10px;
         letter-spacing: 2.2px;
         font-weight: 500;
+        height: 4em;
     }
 }
 
@@ -260,11 +261,12 @@ body {
     }
 
     #join-button {
-        font-size: .8em;
+        font-size: .6em;
         width: 65%;
         border-radius: 10px;
         letter-spacing: 2.2px;
         font-weight: 500;
+        padding: 1em;
         margin-left: 18% !important;
         height: 4em;
     }
@@ -447,7 +449,7 @@ body {
 
 #about-heading {
     width: 4.5em;
-    margin-left: 3%;
+    margin-left: 6%;
 }
 
 #about-subheading {
@@ -523,7 +525,7 @@ body {
 #events-heading {
     width: 11em;
     margin-bottom: 60px;
-    margin-left: 3%;
+    margin-left: 6%;
     font-size: 2.7em;
 }
 
@@ -586,7 +588,7 @@ body {
 }
 #next-up-event-container, #display-events {
     margin-bottom: 30px;
-    margin-left: 0em !important;
+   
 }
 
 @media screen and (max-width: 992px) {
@@ -608,8 +610,10 @@ body {
         text-align: center;
     }
     #next-up-event-container{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0em !important;
+    }
+    #display-events{
+        margin-left: 0em !important;
     }
 }
 
@@ -747,13 +751,16 @@ body {
     .carousel-control-next {
         display: none;
     }
+    .mentorship-program-subtext{
+        margin-top: 1em;
+    }
 }
 
 /* Newsletter */
 
 #newsletter-section {
     margin-top: 100px;
-    margin-bottom: 120px;
+    margin-bottom: 120px;    
 }
 
 @media screen and (max-width: 992px) {
@@ -983,6 +990,9 @@ ul {
 
 .footer-text {
     width: 90%;
+}
+#footer-text2{
+    font-size: .7em;
 }
 
 @media screen and (max-width: 992px) {
