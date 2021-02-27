@@ -446,6 +446,10 @@ body {
     font-size: 1.6em;
 }
 
+#about-text-wrapper {
+    height: 600px;
+}
+
 .about-description {
     font-size: 1.2em;
 }
