@@ -51,14 +51,6 @@ function animateValue(obj, start, end, duration) {
     window.requestAnimationFrame(step);
 }
 
-const thousand = document.getElementById("value1");
-const hundred = document.getElementById("value2");
-const ten = document.getElementById("value3");
-
-animateValue(thousand, 0, 1200, 4200);
-animateValue(hundred, 0, 550, 3600);
-animateValue(ten, 0, 100, 3000);
-
 $(document).ready(function () {
     var $horizontal = $('#horizontal');
 
@@ -212,39 +204,52 @@ window.onload = function () {
 // Animation start when in viewport
 
 function onViewport(el, elClass, offset, callback) {
+
     /*** Based on http://ejohn.org/blog/learning-from-twitter/ ***/
     var didScroll = false;
     var this_top;
     var height;
     var top;
-    
-    if(!offset) { var offset = 0; }
-   
-    $(window).scroll(function() {
+
+    if (!offset) { var offset = 0; }
+
+    $(window).scroll(function () {
         didScroll = true;
     });
-   
-    setInterval(function() {
-      if (didScroll) {
-        didScroll = false;
-        top = $(this).scrollTop();
-   
-        $(el).each(function(i){
-          this_top = $(this).offset().top - offset;
-          height   = $(this).height();
-   
-          // Scrolled within current section
-          if (top >= this_top && !$(this).hasClass(elClass)) {
-            $(this).addClass(elClass);
-   
-            if (typeof callback == "function") callback(el);
-          }
-        });
-      }
-    }, 100);
-  }
 
-  onViewport(".animated", "display-block", 300, function() {
+    setInterval(function () {
+        if (didScroll) {
+            didScroll = false;
+            top = $(this).scrollTop();
+
+            $(el).each(function (i) {
+                this_top = $(this).offset().top - offset;
+                height = $(this).height();
+
+                // Scrolled within current section
+                if (top >= this_top && !$(this).hasClass(elClass)) {
+                    $(this).addClass(elClass);
+
+                    if (typeof callback == "function") callback(el);
+                    const thousand = document.getElementById("value1");
+                    const hundred = document.getElementById("value2");
+                    const ten = document.getElementById("value3");
+
+                    // orgiginal values
+                    // animateValue(thousand, 0, 1200, 4200);
+                    // animateValue(hundred, 0, 550, 3600);
+                    // animateValue(ten, 0, 100, 3000);
+
+                    animateValue(thousand, 0, 1200, 3000);
+                    animateValue(hundred, 0, 550, 3600);
+                    animateValue(ten, 0, 100, 4200);
+                }
+            });
+        }
+    }, 100);
+}
+
+onViewport(".animated", "display-block", 300, function () {
     console.log("Dynamic numbers in viewport")
 });
 
@@ -256,43 +261,43 @@ function showConfirmation() {
     id.classList.add('animate__animated');
     id.classList.add('animate__fadeInDown');
 
-    setTimeout(() => {  id.classList.add('animate__fadeOutUp'); }, 5000);
+    setTimeout(() => { id.classList.add('animate__fadeOutUp'); }, 5000);
 }
 
 // Newsletter inputs
 
-$(window, document, undefined).ready(function() {
+$(window, document, undefined).ready(function () {
 
-    $('input').blur(function() {
-      var $this = $(this);
-      if ($this.val())
-        $this.addClass('used');
-      else
-        $this.removeClass('used');
+    $('input').blur(function () {
+        var $this = $(this);
+        if ($this.val())
+            $this.addClass('used');
+        else
+            $this.removeClass('used');
     });
-  
+
     var $ripples = $('.ripples');
-  
-    $ripples.on('click.Ripples', function(e) {
-  
-      var $this = $(this);
-      var $offset = $this.parent().offset();
-      var $circle = $this.find('.ripplesCircle');
-  
-      var x = e.pageX - $offset.left;
-      var y = e.pageY - $offset.top;
-  
-      $circle.css({
-        top: y + 'px',
-        left: x + 'px'
-      });
-  
-      $this.addClass('is-active');
-  
+
+    $ripples.on('click.Ripples', function (e) {
+
+        var $this = $(this);
+        var $offset = $this.parent().offset();
+        var $circle = $this.find('.ripplesCircle');
+
+        var x = e.pageX - $offset.left;
+        var y = e.pageY - $offset.top;
+
+        $circle.css({
+            top: y + 'px',
+            left: x + 'px'
+        });
+
+        $this.addClass('is-active');
+
     });
-  
-    $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
+
+    $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function (e) {
         $(this).removeClass('is-active');
     });
-  
-  });
+
+});
