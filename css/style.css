@@ -447,10 +447,12 @@ body {
 
     #about-content {
         margin-top: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .about-text {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     #about-heading{
         width: 100%;
@@ -462,7 +464,7 @@ body {
         width: 100%;
         margin-left: 0px;
         letter-spacing: 0em;
-
+        text-align: center;
     }
 }
 
@@ -590,11 +592,12 @@ body {
 
     #next-up-event-container{
         margin-left: 0em !important;
+        padding-left: 30px;
+        border-radius: 0px;
     }
 
     #display-events {
-
-        margin-left: 0em !important;
+        margin-left: 1em !important;
     }
 }
 
@@ -727,6 +730,11 @@ body {
         letter-spacing: 1.2px;
     }
 
+    .mentorship-text {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 1.3em;
+    }
     .carousel-control-prev {
         display: none;
     }
@@ -750,6 +758,8 @@ body {
     #newsletter-section {
         margin-top: 20px;
         margin-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -836,6 +846,13 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
     border: 1px solid #f1491f;
 }
 
+
+@media screen and (max-width: 992px) {
+    .submit{
+        background-color: #f1491f;
+        border: 0px;
+    }
+}
 
 /* FAQ */
 
@@ -1016,6 +1033,11 @@ a, a:hover, a:focus, a:active {
 
 /* Footer Vertical carousel */
 
+.orange-bullet::marker {
+    color: #f1491f;
+    font-size: 1.5em;
+}
+
 #carouselWrapper {
     position: relative;
     overflow: hidden;
@@ -1047,6 +1069,13 @@ a, a:hover, a:focus, a:active {
 }
 
 @media screen and (max-width: 992px) {
+    
+    
+    .resources-ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+    
     #law-school {
         margin-top: 25px;
     }
@@ -1074,12 +1103,6 @@ a, a:hover, a:focus, a:active {
 
     #beta-mobile {
         display: block;
-    }
-
-    .mobile-margins {
-        padding-left: 0;
-        margin-left: 0;
-        width: 100%;
     }
 
     #newsletter-btn-text {
