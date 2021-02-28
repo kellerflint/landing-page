@@ -207,3 +207,92 @@ window.onload = function () {
         });
     }, 3000);
 };
+
+
+// Animation start when in viewport
+
+function onViewport(el, elClass, offset, callback) {
+    /*** Based on http://ejohn.org/blog/learning-from-twitter/ ***/
+    var didScroll = false;
+    var this_top;
+    var height;
+    var top;
+    
+    if(!offset) { var offset = 0; }
+   
+    $(window).scroll(function() {
+        didScroll = true;
+    });
+   
+    setInterval(function() {
+      if (didScroll) {
+        didScroll = false;
+        top = $(this).scrollTop();
+   
+        $(el).each(function(i){
+          this_top = $(this).offset().top - offset;
+          height   = $(this).height();
+   
+          // Scrolled within current section
+          if (top >= this_top && !$(this).hasClass(elClass)) {
+            $(this).addClass(elClass);
+   
+            if (typeof callback == "function") callback(el);
+          }
+        });
+      }
+    }, 100);
+  }
+
+  onViewport(".animated", "display-block", 300, function() {
+    console.log("Dynamic numbers in viewport")
+});
+
+// Show Newsletter confirmation banner
+
+function showConfirmation() {
+    var id = document.getElementById("newsletter-confirmed");
+    id.classList.remove('d-none');
+    id.classList.add('animate__animated');
+    id.classList.add('animate__fadeInDown');
+
+    setTimeout(() => {  id.classList.add('animate__fadeOutUp'); }, 5000);
+}
+
+// Newsletter inputs
+
+$(window, document, undefined).ready(function() {
+
+    $('input').blur(function() {
+      var $this = $(this);
+      if ($this.val())
+        $this.addClass('used');
+      else
+        $this.removeClass('used');
+    });
+  
+    var $ripples = $('.ripples');
+  
+    $ripples.on('click.Ripples', function(e) {
+  
+      var $this = $(this);
+      var $offset = $this.parent().offset();
+      var $circle = $this.find('.ripplesCircle');
+  
+      var x = e.pageX - $offset.left;
+      var y = e.pageY - $offset.top;
+  
+      $circle.css({
+        top: y + 'px',
+        left: x + 'px'
+      });
+  
+      $this.addClass('is-active');
+  
+    });
+  
+    $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
+        $(this).removeClass('is-active');
+    });
+  
+  });

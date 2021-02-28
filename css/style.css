@@ -6,8 +6,6 @@ body {
 }
 
 .container-fluid {
-    padding-right: 20px;
-    padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
 
@@ -248,53 +246,6 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 1200px) {
-    #subscribe-for-free {
-        display: none;
-    }
-    #join-button {
-        font-size: .7em;
-        width: 75%;
-        padding: .9em;
-        border-radius: 10px;
-        letter-spacing: 2.2px;
-        font-weight: 500;
-        height: 4em;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    #law-school {
-        margin-top: 25px;
-    }
-
-    #join-button {
-        font-size: .6em;
-        width: 65%;
-        border-radius: 10px;
-        letter-spacing: 2.2px;
-        font-weight: 500;
-        padding: 1em;
-        margin-left: 18% !important;
-        height: 4em;
-    }
-    #student-img{
-        width: 65%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto
-    }
-
-    #beta-full {
-        display: none;
-    }
-
-    #beta-mobile {
-        display: block;
-    }
-
-}
-
 /* Down Arrow */
 
 .arrow {
@@ -381,6 +332,14 @@ body {
   }
 
 /* Number Circles */
+
+.display-none {
+    display: none !important;
+}
+
+.display-block {
+    display: block !important;
+}
 
 .circle {
     position: relative;
@@ -857,8 +816,8 @@ input:focus ~ label, input.used ~ label {
 input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 
 .submit{
-    width: 45px;
-    height: 45px;
+    width: 1.75em;
+    height: 1.75em;
     display: block;
     margin: 0 auto -15px auto;
     background: black;
@@ -1069,4 +1028,66 @@ a, a:hover, a:focus, a:active {
 
 .carous {
     border: 1px solid #FEF9F2;
+}
+
+@media screen and (max-width: 1200px) {
+    #subscribe-for-free {
+        display: none;
+    }
+    #join-button {
+        font-size: .7em;
+        width: 75%;
+        padding: .9em;
+        border-radius: 10px;
+        letter-spacing: 2.2px;
+        font-weight: 500;
+        height: 4em;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    #law-school {
+        margin-top: 25px;
+    }
+
+    #join-button {
+        font-size: .6em;
+        width: 65%;
+        border-radius: 10px;
+        letter-spacing: 2.2px;
+        font-weight: 500;
+        padding: 1em;
+        margin-left: 18% !important;
+        height: 4em;
+    }
+    #student-img{
+        width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    #beta-full {
+        display: none;
+    }
+
+    #beta-mobile {
+        display: block;
+    }
+
+    .mobile-margins {
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #newsletter-btn-text {
+        display: inline !important;
+    }
+
+    .submit {
+        width: 8em;
+        border-radius: 10px;
+    }
 }

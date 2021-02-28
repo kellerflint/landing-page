@@ -168,9 +168,9 @@
         <div>
             <div class="row bg-orange">
                 <div id="marg-circ" class="col-10 offset-1 font-m h3 rounded">
-                    <div class="row my-4 text-light">
-                        <div class="col-6 col-md-7 col-lg-2 offset-2 offset-lg-0  p-0">
-                            <div class="circle animate__animated animate__zoomIn animate__delay-2s">
+                    <div class="row my-4 text-light circle-height">
+                        <div class="col-6 col-md-7 col-lg-2 offset-2 offset-lg-0 p-0 animated display-none">
+                            <div class="circle animate__animated animate__zoomIn">
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
                                         <div class="circle__content">
@@ -183,7 +183,7 @@
                             <h6 id="numbers-text" class="font-le text-center spacing">Community of law students and
                                 lawyers</h6>
                         </div>
-                        <div class="col-6 col-md-7 col-lg-2 offset-2 offset-lg-2 p-0">
+                        <div class="col-6 col-md-7 col-lg-2 offset-2 offset-lg-2 p-0 animated display-none">
                             <div class="circle animate__animated animate__zoomIn animate__delay-1s">
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
@@ -196,8 +196,8 @@
                             <h6 id="numbers-text" class="font-le text-center spacing">Attendees during our monthly
                                 webinars</h6>
                         </div>
-                        <div class="col-6 col-md-7 col-lg-2 offset-2 offset-lg-2 p-0">
-                            <div class="circle animate__animated animate__zoomIn">
+                        <div class="col-6 col-md-7 col-lg-2 offset-2 offset-lg-2 p-0 animated display-none">
+                            <div class="circle animate__animated animate__zoomIn animate__delay-2s">
                                 <div class="circle__inner">
                                     <div class="circle__wrapper">
                                         <div class="circle__content">
@@ -310,7 +310,7 @@
             </h2>
         </div>
 
-        <div class="row">
+        <div class="row mobile-margins">
             <div id="next-up-event-container" class="col-12 col-lg-3 ms-5 p-4 text-light">
                 <h2><span class="text-orange">07 </span>APRIL 2021</h2>
                 <p id="next-up-event-text" class="font-l">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -558,7 +558,10 @@
                     <h1 id="sign-up-newsletter" class="section-heading text-orange mt-5 font-le">SIGN UP FOR OUR
                         NEWSLETTER</h1>
                 </div>
-                <form class="d-flex justify-content-center mt-5">
+                <div id="newsletter-confirmed" class="bg-success text-center p-3 text-light font-m d-none fixed-top">
+                    <h5><i class="fas fa-envelope h5"></i> You have successfully subscribed to our newsletter</h5>
+                </div>
+                <form action="#newsletter-section" class="row d-flex justify-content-center mt-5" onsubmit="showConfirmation()">
                     <div class="col-lg-3">
                         <!-- Name input -->
                         <div class="group form-outline me-2">
@@ -574,7 +577,9 @@
                         </div>
                     </div>
                     <div class="col-lg-1">
-                        <button type="submit" class="submit"><i class="fa fa-arrow-right"></i></button>
+                        <button type="submit" class="submit">
+                            <div id="newsletter-btn-text" class="d-none font-m">SUBSCRIBE</div> <i class="fa fa-arrow-right"></i>
+                        </button>
                     </div>
                 </form>
             </div>
