@@ -555,7 +555,7 @@
         <div id="newsletter-section" class="row">
             <div class="col-12">
                 <div class="text-center">
-                    <h1 id="sign-up-newsletter" class="section-heading text-orange mt-5 font-le">SIGN UP FOR OUR
+                    <h1 id="sign-up-newsletter" class="section-heading mt-5 font-le">SIGN UP FOR OUR
                         NEWSLETTER</h1>
                 </div>
                 <div id="newsletter-confirmed" class="bg-success text-center p-3 text-light font-m d-none fixed-top">
@@ -563,6 +563,10 @@
                 </div>
                 <form action="#newsletter-section" class="row d-flex justify-content-center mt-5"
                     onsubmit="showConfirmation()">
+
+                    <div class="col-1 offset-1">
+                        <img src="assets/icons/email.png" class="img-fluid w-75">
+                    </div>
                     <div class="col-lg-3">
                         <!-- Name input -->
                         <div class="group form-outline">
@@ -579,9 +583,19 @@
                     </div>
                     <div class="col-lg-1">
                         <button type="submit" class="submit">
-                            <div id="newsletter-btn-text" class="d-none font-m">SUBSCRIBE</div> <i
-                                class="fa fa-arrow-right"></i>
+                            <div id="newsletter-btn-text" class="d-none font-m">SUBSCRIBE</div> 
+                            <i class="fa fa-arrow-right"></i>
                         </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            
+                            <label class="offset-lg-5 text-light" for="myCheck">
+                                <input class="agree-input mr-3" type="checkbox" id="myCheck" onclick="myFunction()"> I agree to the terms and <a href="#" class="text-light" target="_blank">policy</a>
+                            </label> 
+                                <span id="text" style="display:none">Please agree to the policy</span> 
+                               
+                        </div>
                     </div>
                 </form>
             </div>

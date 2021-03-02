@@ -751,7 +751,14 @@ body {
 
 #newsletter-section {
     margin-top: 100px;
-    margin-bottom: 120px;    
+    margin-bottom: 120px;  
+    background-image: url('../assets/images/red-bg-2-transparent.png');  
+    height: 30em;
+}
+#sign-up-newsletter{
+    color: #FEF9F2;
+    margin-top: 5.5em !important;
+    font-size: 2.5em;
 }
 
 @media screen and (max-width: 992px) {
@@ -768,17 +775,17 @@ body {
 	margin-bottom: 45px; 
 }
 
-input {
+/* input {
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
 	-webkit-appearance: none;
-    background-color: #FEF9F2;
+    background: transparent;
 	display: block;
-	color: #636363;
+	color: #FEF9F2;
 	width: 100%;
 	border: none;
 	border-radius: 0;
-	border-bottom: 1px solid #757575;
+	border-bottom: 1px solid #FEF9F2;
 }
 
 input:focus { 
@@ -786,7 +793,7 @@ input:focus {
 }
 
 label {
-	color: #999; 
+	color: #FEF9F2; 
 	font-size: 18px;
 	font-weight: normal;
 	position: absolute;
@@ -799,8 +806,7 @@ label {
 input:focus ~ label, input.used ~ label {
 	top: -20px;
   transform: scale(.75); left: -2px;
-	/* font-size: 14px; */
-	color: #f1491f;
+	color: #FEF9F2;
 }
 
 .bar {
@@ -815,7 +821,7 @@ input:focus ~ label, input.used ~ label {
 	width: 0;
 	bottom: 1px; 
 	position: absolute;
-	background: #f1491f; 
+	background: #FEF9F2; 
 	transition: all 0.2s ease;
 }
 
@@ -844,7 +850,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
     color: #fff;
     outline: 0;
     border: 1px solid #f1491f;
-}
+} */
 
 
 @media screen and (max-width: 992px) {
