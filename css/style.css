@@ -775,7 +775,7 @@ body {
 	margin-bottom: 45px; 
 }
 
-/* input {
+.newsletter {
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
 	-webkit-appearance: none;
@@ -788,11 +788,11 @@ body {
 	border-bottom: 1px solid #FEF9F2;
 }
 
-input:focus { 
+.newsletter:focus { 
     outline: none; 
 }
 
-label {
+.newsletter-label {
 	color: #FEF9F2; 
 	font-size: 18px;
 	font-weight: normal;
@@ -803,7 +803,7 @@ label {
 	transition: all 0.2s ease;
 }
 
-input:focus ~ label, input.used ~ label {
+.newsletter:focus ~ .newsletter-label, .newsletter.used ~ .newsletter-label {
 	top: -20px;
   transform: scale(.75); left: -2px;
 	color: #FEF9F2;
@@ -829,7 +829,7 @@ input:focus ~ label, input.used ~ label {
 
 .bar:after { right: 50%; }
 
-input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+.newsletter:focus ~ .bar:before, .newsletter:focus ~ .bar:after { width: 50%; }
 
 .submit{
     width: 1.75em;
@@ -846,11 +846,11 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 }
 
 .submit:hover {
-    background-color: #f1491f;
-    color: #fff;
+    background-color: #FEF9F2;
+    color: black;
     outline: 0;
-    border: 1px solid #f1491f;
-} */
+    border: 1px solid #FEF9F2;
+}
 
 
 @media screen and (max-width: 992px) {
