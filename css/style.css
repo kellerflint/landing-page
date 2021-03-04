@@ -83,6 +83,7 @@ body {
 
 .link:hover {
     text-decoration: underline;
+    color: #f1491f !important;
 }
 
 @font-face {
