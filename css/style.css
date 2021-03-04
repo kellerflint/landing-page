@@ -68,8 +68,8 @@ body {
 /* Newsletter icon */
 
 #newsletter-icon {
-    border: 1px solid #FEF9F2;
-    background-color: rgb(166, 166, 166);
+    border: 2px solid #FEF9F2;
+    background-color:#f1491f;
     border-radius: 100%;
     width: 4em;
     position: fixed;
@@ -147,34 +147,14 @@ body {
     color: #FEF9F2;
 }
 
-.font-gray {
-    color: #767676;
-}
-
-.font-32{
-    font-size: 32px;
-}
-.font-36{
-    font-size: 36px;
-}
-.font-65{
-    font-size: 66px !important;
-    letter-spacing: 2px;
-}
-.font-68{
-    font-size: 68px !important;
-}
-.font-big{
-    font-size: 8rem;
-}
-.m-5r{
-  margin-left: 5rem;
-}
 .m-9{
     margin-left: 9rem;
 }
 .spacing{
     letter-spacing: .07em !important;
+}
+.spacing2{
+    letter-spacing: .2em;
 }
 
 /* Navigation */
@@ -255,8 +235,6 @@ body {
     margin-left: -20px;
     width: 40px;
     height: 60px; /*change with size of arrow to make sit on bottom */
-  /*   background-image: url(); */
-  /*   background-size: contain; */
   }
   
   .bounce {
@@ -763,10 +741,23 @@ body {
 
 @media screen and (max-width: 992px) {
     #newsletter-section {
-        margin-top: 20px;
+        height: 40em;
         margin-bottom: 60px;
         padding-left: 30px;
         padding-right: 30px;
+        margin-top: 0em;
+        background-size: cover;
+    }
+    #sign-up-newsletter{
+        margin-top: 5em !important;
+        font-size:x-large;
+        letter-spacing: .1em;
+    }
+    #newsletter-btn-text{
+        font-size: large;
+    }
+    .privacy-agreement{
+        margin-bottom: 2em;
     }
 }
 
@@ -805,7 +796,7 @@ body {
 
 .newsletter:focus ~ .newsletter-label, .newsletter.used ~ .newsletter-label {
 	top: -20px;
-  transform: scale(.75); left: -2px;
+    transform: scale(.75); left: -2px;
 	color: #FEF9F2;
 }
 
@@ -855,8 +846,10 @@ body {
 
 @media screen and (max-width: 992px) {
     .submit{
-        background-color: #f1491f;
+        background-color: #FEF9F2;
+        color:  #f1491f;
         border: 0px;
+        /* margin: 5em; */
     }
 }
 
