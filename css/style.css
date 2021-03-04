@@ -68,8 +68,8 @@ body {
 /* Newsletter icon */
 
 #newsletter-icon {
-    border: 1px solid #FEF9F2;
-    background-color: rgb(166, 166, 166);
+    border: 2px solid #FEF9F2;
+    background-color:#f1491f;
     border-radius: 100%;
     width: 4em;
     position: fixed;
@@ -147,34 +147,14 @@ body {
     color: #FEF9F2;
 }
 
-.font-gray {
-    color: #767676;
-}
-
-.font-32{
-    font-size: 32px;
-}
-.font-36{
-    font-size: 36px;
-}
-.font-65{
-    font-size: 66px !important;
-    letter-spacing: 2px;
-}
-.font-68{
-    font-size: 68px !important;
-}
-.font-big{
-    font-size: 8rem;
-}
-.m-5r{
-  margin-left: 5rem;
-}
 .m-9{
     margin-left: 9rem;
 }
 .spacing{
     letter-spacing: .07em !important;
+}
+.spacing2{
+    letter-spacing: .2em;
 }
 
 /* Navigation */
@@ -255,8 +235,6 @@ body {
     margin-left: -20px;
     width: 40px;
     height: 60px; /*change with size of arrow to make sit on bottom */
-  /*   background-image: url(); */
-  /*   background-size: contain; */
   }
   
   .bounce {
@@ -751,15 +729,35 @@ body {
 
 #newsletter-section {
     margin-top: 100px;
-    margin-bottom: 120px;    
+    margin-bottom: 120px;  
+    background-image: url('../assets/images/red-bg-2-transparent.png');  
+    height: 30em;
+}
+#sign-up-newsletter{
+    color: #FEF9F2;
+    margin-top: 5.5em !important;
+    font-size: 2.5em;
 }
 
 @media screen and (max-width: 992px) {
     #newsletter-section {
-        margin-top: 20px;
+        height: 40em;
         margin-bottom: 60px;
         padding-left: 30px;
         padding-right: 30px;
+        margin-top: 0em;
+        background-size: cover;
+    }
+    #sign-up-newsletter{
+        margin-top: 5em !important;
+        font-size:x-large;
+        letter-spacing: .1em;
+    }
+    #newsletter-btn-text{
+        font-size: large;
+    }
+    .privacy-agreement{
+        margin-bottom: 2em;
     }
 }
 
@@ -768,25 +766,25 @@ body {
 	margin-bottom: 45px; 
 }
 
-input {
+.newsletter {
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
 	-webkit-appearance: none;
-    background-color: #FEF9F2;
+    background: transparent;
 	display: block;
-	color: #636363;
+	color: #FEF9F2;
 	width: 100%;
 	border: none;
 	border-radius: 0;
-	border-bottom: 1px solid #757575;
+	border-bottom: 1px solid #FEF9F2;
 }
 
-input:focus { 
+.newsletter:focus { 
     outline: none; 
 }
 
-label {
-	color: #999; 
+.newsletter-label {
+	color: #FEF9F2; 
 	font-size: 18px;
 	font-weight: normal;
 	position: absolute;
@@ -796,11 +794,10 @@ label {
 	transition: all 0.2s ease;
 }
 
-input:focus ~ label, input.used ~ label {
+.newsletter:focus ~ .newsletter-label, .newsletter.used ~ .newsletter-label {
 	top: -20px;
-  transform: scale(.75); left: -2px;
-	/* font-size: 14px; */
-	color: #f1491f;
+    transform: scale(.75); left: -2px;
+	color: #FEF9F2;
 }
 
 .bar {
@@ -815,7 +812,7 @@ input:focus ~ label, input.used ~ label {
 	width: 0;
 	bottom: 1px; 
 	position: absolute;
-	background: #f1491f; 
+	background: #FEF9F2; 
 	transition: all 0.2s ease;
 }
 
@@ -823,7 +820,7 @@ input:focus ~ label, input.used ~ label {
 
 .bar:after { right: 50%; }
 
-input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+.newsletter:focus ~ .bar:before, .newsletter:focus ~ .bar:after { width: 50%; }
 
 .submit{
     width: 1.75em;
@@ -840,17 +837,19 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 }
 
 .submit:hover {
-    background-color: #f1491f;
-    color: #fff;
+    background-color: #FEF9F2;
+    color: black;
     outline: 0;
-    border: 1px solid #f1491f;
+    border: 1px solid #FEF9F2;
 }
 
 
 @media screen and (max-width: 992px) {
     .submit{
-        background-color: #f1491f;
+        background-color: #FEF9F2;
+        color:  #f1491f;
         border: 0px;
+        /* margin: 5em; */
     }
 }
 
