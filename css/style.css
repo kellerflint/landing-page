@@ -1051,6 +1051,21 @@ a, a:hover, a:focus, a:active {
     border: 1px solid #FEF9F2;
 }
 
+#events-title {
+    min-width: 204px;
+}
+
+.vert-wrapper {
+    position: relative;
+    padding-left: 30px;
+  }
+
+.vertical {
+    position: absolute;
+    transform: rotate(270deg) translateX(calc(-100% + 23px)) translateY(-8px);
+    transform-origin: left bottom; 
+  }
+
 @media screen and (max-width: 1200px) {
     #subscribe-for-free {
         display: none;
