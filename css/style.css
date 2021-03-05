@@ -83,6 +83,7 @@ body {
 
 .link:hover {
     text-decoration: underline;
+    color: #f1491f !important;
 }
 
 @font-face {
@@ -1049,7 +1050,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .carous {
-    border: 1px solid #FEF9F2;
+    /* border: 1px solid #FEF9F2; */
 }
 
 #events-title {

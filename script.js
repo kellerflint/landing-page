@@ -253,16 +253,51 @@ onViewport(".animated", "display-block", 300, function () {
     console.log("Dynamic numbers in viewport")
 });
 
-// Show Newsletter confirmation banner
+// Newsletter form
 
-function showConfirmation() {
-    var id = document.getElementById("newsletter-confirmed");
+function validateForm(){
+	var name = document.forms["mc-embedded-subscribe-form"]["NAME"].value;
+	var email = document.forms["mc-embedded-subscribe-form"]["EMAIL"].value;
+
+	if (name.length<1) {
+        document.getElementById('error-name').innerHTML = "Name is required *"
+    }
+    if (email.length<1) {
+        document.getElementById('error-email').innerHTML = "Email is required *";
+    }    
+    if(name.length<1 || email.length<1){
+       	return false;
+    }
+    else {
+        var id = document.getElementById("newsletter-confirmed");
     id.classList.remove('d-none');
     id.classList.add('animate__animated');
     id.classList.add('animate__fadeInDown');
 
     setTimeout(() => { id.classList.add('animate__fadeOutUp'); }, 5000);
+    }
 }
+
+$('#mc-embedded-subscribe-form').on('submit',
+    function (e) {
+        submitForm(e, this);
+    }
+);
+
+function submitForm(e, form) {
+    e.preventDefault();
+
+    $.post(form.action, $(form).serialize());
+}
+
+// function showConfirmation() {
+//     var id = document.getElementById("newsletter-confirmed");
+//     id.classList.remove('d-none');
+//     id.classList.add('animate__animated');
+//     id.classList.add('animate__fadeInDown');
+
+//     setTimeout(() => { id.classList.add('animate__fadeOutUp'); }, 5000);
+// }
 
 // Newsletter inputs
 
