@@ -731,7 +731,7 @@ body {
 #newsletter-section {
     margin-top: 100px;
     margin-bottom: 120px;  
-    background-image: url('../assets/images/red-bg-2-transparent.png');  
+    background-image: url('../assets/images/red-bg-top-curve.png');  
     height: 30em;
 }
 #sign-up-newsletter{
@@ -739,27 +739,9 @@ body {
     margin-top: 5.5em !important;
     font-size: 2.5em;
 }
-
-@media screen and (max-width: 992px) {
-    #newsletter-section {
-        height: 40em;
-        margin-bottom: 60px;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-top: 0em;
-        background-size: cover;
-    }
-    #sign-up-newsletter{
-        margin-top: 5em !important;
-        font-size:x-large;
-        letter-spacing: .1em;
-    }
-    #newsletter-btn-text{
-        font-size: large;
-    }
-    .privacy-agreement{
-        margin-bottom: 2em;
-    }
+.privacy-agreement{
+    margin-left: 29%;
+    float: left;
 }
 
 .group { 
@@ -843,14 +825,33 @@ body {
     outline: 0;
     border: 1px solid #FEF9F2;
 }
-
-
-@media screen and (max-width: 992px) {
+/* For mobile phones and IPad */
+@media screen and (max-width: 768px) {
+    #newsletter-section {
+        height: 38em;
+        margin-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 0em;
+        background-size: cover;
+        background-position: center;
+    }
+    #sign-up-newsletter{
+        margin-top: 5em !important;
+        font-size:x-large;
+        letter-spacing: .1em;
+    }
+    #newsletter-btn-text{
+        font-size: large;
+    }
+    .privacy-agreement{
+        margin-bottom: 2em;
+        margin-left: 0em;
+    }
     .submit{
         background-color: #FEF9F2;
         color:  #f1491f;
         border: 0px;
-        /* margin: 5em; */
     }
 }
 
