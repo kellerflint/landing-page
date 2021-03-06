@@ -1,5 +1,9 @@
 /* Landing Page (General) */
 
+.blur {
+    filter:blur(2px);
+}
+
 body {
     background-color: #FEF9F2;
     overflow-x: hidden;
@@ -47,6 +51,33 @@ body {
     letter-spacing: .3em;
 }
 
+.vertical-right {
+    font-family: 'Lato', sans-serif;
+    font-size: .9rem;
+    position: absolute;
+    text-align: center;
+    transform: rotate(90deg) translateX(calc(50% - 7px));
+    transform-origin: right top;
+    right: 20px;
+    top: 50%;
+}
+
+#vert-events {
+    margin-right: -15px;
+}
+
+#vert-faq {
+    margin-right: -15px;
+}
+
+#vert-membership {
+    margin-right: -5px;
+}
+
+.vert-right-wrapper {
+    position:relative;
+}
+
 @media screen and (max-width: 992px) {
     .border-small-line {
         border-right: none;
@@ -62,6 +93,10 @@ body {
 
     .section-subheading {
         font-size: 1.5em;
+    }
+
+    .vertical-right {
+        display: none;
     }
 }
 
@@ -1057,18 +1092,22 @@ a, a:hover, a:focus, a:active {
     min-width: 204px;
 }
 
-.vert-wrapper {
+.vert-left-wrapper {
     position: relative;
     padding-left: 30px;
-  }
+}
 
-.vertical {
+.vertical-left {
     position: absolute;
-    transform: rotate(270deg) translateX(calc(-100% + 23px)) translateY(-8px);
+    transform: rotate(270deg) translateX(calc(-100% + 17px)) translateY(-8px);
     transform-origin: left bottom; 
-  }
+}
 
 @media screen and (max-width: 1200px) {
+    #vert-faq {
+        display: none;
+    }
+    
     #subscribe-for-free {
         display: none;
     }
