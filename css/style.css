@@ -1099,8 +1099,10 @@ a, a:hover, a:focus, a:active {
 
 .vertical-left {
     position: absolute;
-    transform: rotate(270deg) translateX(calc(-100% + 17px)) translateY(-8px);
+    transform: rotate(270deg) translateX(calc(-50% + 26px)) translateY(-8px);
     transform-origin: left bottom; 
+    top: 50%;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
