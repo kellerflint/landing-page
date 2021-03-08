@@ -572,7 +572,8 @@ body {
     outline: none;
     cursor: pointer;
     padding: 24px 26px;
-    font-size: 17px;  
+    font-size: xx-large; 
+    font-weight: 900; 
     width: 25%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -583,14 +584,16 @@ body {
     background-color: #F0F0F0;
     border: 1px solid #F0F0F0;
     outline: none;
-     cursor: pointer;
+    cursor: pointer;
     padding: 24px 26px;
-    font-size: 17px;  
+    font-size: xx-large;  
+    font-weight: 900;
     width: 25%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-style: none;
   }
+
   .tab-pane-coming:hover, .tab-pane-past:hover{
     color:#f1491f;
   }
@@ -617,20 +620,23 @@ body {
 
 @media screen and (max-width: 992px) {
     .tab-pane-coming{
-        width: 38%;
+        width: 49%;
         cursor: pointer;
         padding: 8px 10px;
         font-size: 12px;  
     }
     .tab-pane-past {
-        width: 38%;
+        width: 49%;
         cursor: pointer;
         padding: 8px 10px;
         font-size: 12px; 
     }
+    .tabcontent{
+        box-shadow: none;
+    }
 
     #defaultOpen{
-        margin-left: 2.2em;
+        margin-left: 0em;
     }
 
     .tabcontent { 
@@ -664,9 +670,13 @@ body {
     }
 
     #next-up-event-container{
-        margin-left: 0em !important;
+        margin-left: 1.8em !important;
         padding-left: 30px;
         border-radius: 0px;
+        width: 85%;
+    }
+    #next-up-event-text{
+        height: 65%;
     }
 
     #display-events {
