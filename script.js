@@ -15,11 +15,11 @@ $(document).ready(function () {
         var nav_img = $('.navbar-brand img');
         if ($(document).scrollTop() < 50) {
             $('nav').addClass('transparent');
-            nav_img.attr("src", "assets/images/MiL-Logo.png");
+            nav_img.attr("src", "assets/images/MiL-Beta.png");
             nav_img.attr("height", "20");
         } else {
             $('nav').removeClass('transparent').css('color: black');
-            nav_img.attr("src", "assets/images/Gavel-Logo.png");
+            nav_img.attr("src", "assets/images/Gavel-Logo-Beta.png");
             nav_img.attr("height", "30");
         }
     });
