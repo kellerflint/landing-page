@@ -549,7 +549,7 @@ body {
     background-color: #ffe6e0;
     border-radius: 20px;
 }
-#next-up-event-container, #display-events, display-events-past{
+#next-up-event-container, #display-events, #display-events-past{
     margin-bottom: 30px;
 }
 /* Past Events and tabs */
@@ -557,13 +557,18 @@ body {
     margin-left: 5em;
 }
 
-#coming-events-tab {background-color:#f0e5db;}
-#past-events-tab {background-color: #fdf9f5;}
+#coming-events-tab {
+    background-color:white;
+}
+
+#past-events-tab {
+    background-color: #F0F0F0;
+}
 
 /* Style tab links */
 .tab-pane-coming {
-    background-color: #f0e5db;
-    border: 1px solid #f0ece4;
+    background-color: white;
+    border: 1px solid white;
     outline: none;
     cursor: pointer;
     padding: 24px 26px;
@@ -575,8 +580,8 @@ body {
   }
 
   .tab-pane-past{
-    background-color: #fdf9f5;
-    border: 1px solid #f0ece4;
+    background-color: #F0F0F0;
+    border: 1px solid #F0F0F0;
     outline: none;
      cursor: pointer;
     padding: 24px 26px;
@@ -587,52 +592,48 @@ body {
     border-bottom-style: none;
   }
   .tab-pane-coming:hover, .tab-pane-past:hover{
-    color: black;
+    color:#f1491f;
   }
-
-  .tab-pane-coming:focus {     
-    background-color:#f0e5db; 
-}
-.tab-pane-past:focus {     
-    background-color:#fdf9f5;   
-}
 
   /* Style the tab content (and add height:100% for full page content) */
   .tabcontent { 
-    border: 1px solid #f0ece4;
     display: none;
     padding: 50px 20px;
     height: 100%;
     border-radius: 20px;
     margin-left: 2em;
     margin-right: 2em;
+    margin-bottom: 8em;
   }
 
   .past-event-item {
       padding-left: 2em;
-        width: 90%;
-        height: 5em;
-        overflow: hidden;
-        margin-bottom: 20px;
-        margin-right: 20px;
+      width: 90%;
+      height: 5em;
+      overflow: hidden;
+      margin-bottom: 50px;
+      margin-right: 20px;
 }
 
 @media screen and (max-width: 992px) {
-    .tab-pane-coming, .tab-pane-past {
-        width: 40%;
+    .tab-pane-coming{
+        width: 38%;
         cursor: pointer;
         padding: 8px 10px;
         font-size: 12px;  
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
     }
-    
+    .tab-pane-past {
+        width: 38%;
+        cursor: pointer;
+        padding: 8px 10px;
+        font-size: 12px; 
+    }
+
     #defaultOpen{
         margin-left: 2.2em;
     }
 
     .tabcontent { 
-        border: 1px solid #f0ece4;
         display: none;
         padding: 0px 0px;
         height: 100%;
