@@ -425,11 +425,12 @@ body {
 /* About */
 
 .about-text {
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 #about-text-wrapper {
     height: 33em !important;
+    margin-left: 9.3%;
 }
 
 .about-description {
@@ -442,6 +443,7 @@ body {
 
 #about-content {
     margin-top: 80px;
+    margin-bottom: 7em;
 }
 
 #about-heading {
@@ -463,6 +465,7 @@ body {
 @media screen and (max-width: 992px) {
     #about-container {
         margin-top: 25px;
+        height: 97em;
     }
 
     #about-content {
@@ -486,6 +489,10 @@ body {
         margin-left: 0px;
         letter-spacing: 0em;
         text-align: center;
+    }
+
+    #about-text-wrapper {
+        margin-left: 0%;
     }
 }
 
@@ -722,6 +729,13 @@ body {
         margin-left: 1em !important;
         padding-right: 1em;
     }
+
+    .margin-events{
+        margin-left: -.5em;
+    }
+    .margin-more{
+        margin-left: 1em;
+    }
 }
 
 /* Testimonials */
@@ -846,6 +860,10 @@ body {
     margin-top: 3em;
 }
 
+.marg-mentorship-section{
+    margin-left: 7%;
+}
+
 @media screen and (max-width: 992px) {
     #mentor-profile-button {
         border-radius: 10px;
@@ -865,8 +883,13 @@ body {
     .carousel-control-next {
         display: none;
     }
+
     .mentorship-program-subtext{
         margin-top: 1em;
+    }
+
+    .marg-mentorship-section{
+        margin-left: 0%;
     }
 }
 
@@ -883,6 +906,7 @@ body {
     margin-top: 5.5em !important;
     font-size: 2.5em;
 }
+
 .privacy-agreement{
     margin-left: 29%;
     float: left;
@@ -968,6 +992,19 @@ body {
     color: black;
     outline: 0;
     border: 1px solid #FEF9F2;
+}
+
+.form-check-input[type=checkbox]:checked {
+    background-image: none;
+    background-color: black;
+    border-color: black;
+}
+
+.form-check-input:checked {
+    border-color: black !important;
+}
+.terms:hover, .privacy:hover{
+    color: #F0F0F0 !important;
 }
 
 /* For mobile phones and IPad */
@@ -1106,6 +1143,7 @@ a, a:hover, a:focus, a:active {
 
 .faq-button{
     text-transform: none;
+    font-size: .7em;
 }
 
 @media screen and (max-width: 992px) {
@@ -1181,7 +1219,6 @@ a, a:hover, a:focus, a:active {
 
 .orange-bullet::marker {
     color: #f1491f;
-    font-size: 1.5em;
 }
 
 #carouselWrapper {
@@ -1223,6 +1260,7 @@ a, a:hover, a:focus, a:active {
     #subscribe-for-free {
         display: none;
     }
+
     #join-button {
         font-size: .7em;
         width: 75%;

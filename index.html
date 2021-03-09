@@ -221,7 +221,7 @@
 
         <div id="about-anchor"></div>
 
-        <div class="row vert-right-wrapper" id="about-container">
+        <div class="row vert-right-wrapper text-center" id="about-container">
 
             <p class="vertical-right">
                 <span class="text-orange blur">●</span>
@@ -237,7 +237,7 @@
             </h2>
 
             <div class="row" id="about-content">
-                <div id="about-text-wrapper" class="col-12 col-lg-4 offset-lg-1 text-center mt-3 font-a-bold">
+                <div id="about-text-wrapper" class="col-12 col-lg-4 text-center mt-3 font-a-bold">
                     <p class="about-text">
                         Law schools are churning out lawyers of yesterday instead of tomorrow.
                         There is a significant gap in what is being taught in law schools and what
@@ -253,7 +253,7 @@
                     </p>
                 </div>
                 <div class="col-0 col-lg-1 border-line"></div>
-                <div class="col-12 col-lg-5 font-a-light">
+                <div class="col-12 col-lg-5 font-a-light margin-events">
                     <div class="row my-4">
                         <div class="col-3 offset-1 offset-lg-2">
                             <img src="assets/icons/1.png" class="img-fluid">
@@ -290,7 +290,7 @@
                         </div>
                     </div>
                     <div class="row mb-5">
-                        <div class="offset-2 text-center pt-4">
+                        <div class="offset-2 text-center pt-4 margin-more">
                             <h3 id="and-more-to-come" class="text-muted mt-3 font-l section-subheading">...and more
                                 coming soon!
                             </h3>
@@ -312,6 +312,12 @@
 
         <!-- Coming Events -->
         <div id="coming-events-tab" class="tabcontent shadow-5-strong">
+            <div class="vert-right-wrapper">
+                <p id="vert-events" class="vertical-right">
+                    <span class="text-orange blur">●</span>
+                    Let's democratize the practice of law
+                    <span class="text-orange blur">●</span>
+                </p>
             <div id="event-section" class="row">
                 <h1 id="events-heading" class="d-inline border-small-line text-orange font-le">
                     UPCOMING EVENTS
@@ -320,23 +326,6 @@
                     LEARN FROM THE BEST
                 </h2>
             </div>
-
-            <div class="vert-right-wrapper">
-                <p id="vert-events" class="vertical-right">
-                    <span class="text-orange blur">●</span>
-                    Let's democratize the practice of law
-                    <span class="text-orange blur">●</span>
-                </p>
-
-                <div id="event-section" class="row">
-
-                    <h1 id="events-heading" class="d-inline border-small-line text-orange font-le">
-                        UPCOMING EVENTS
-                    </h1>
-                    <h2 id="events-subheading" class="d-inline font-m text-muted mt-3">
-                        LEARN FROM THE BEST
-                    </h2>
-                </div>
 
                 <div class="row">
 
@@ -670,7 +659,7 @@
                 Let's demystify the legal industry
                 <span class="text-orange blur">●</span>
             </p>
-            <div class="col-12 col-lg-4 offset-0 offset-lg-1 text-center">
+            <div class="col-12 col-lg-4 offset-0 marg-mentorship-section text-center">
                 <h3 class="mentorship-program-subtext font-m d-none d-lg-inline-block">COMING SOON</h3>
                 <h1 id="mentorship-heading" class="section-heading text-orange my-3 font-le">MENTORSHIP <br /> PROGRAM
                 </h1>
@@ -681,8 +670,8 @@
                 </button>
             </div>
             <div class="col-0 col-lg-1 border-line"></div>
-            <div class="col-12 col-lg-4 offset-lg-1 font-l">
-                <p class="text-orange text-center d-none d-lg-inline-block" id="we-love-mentorship">We love mentorship!
+            <div class="col-12 col-lg-4 offset-lg-1 text-center">
+                <p class="text-orange d-none d-lg-inline-block" id="we-love-mentorship">We love mentorship!
                 </p>
                 <p class="mentorship-text font-a text-center">
                     We think mentorship can change the world.
@@ -758,8 +747,9 @@
                             <div class="form-check text-left">
                                 <input class="form-check-input d-inline" type="checkbox" value="" id="privacyAgree"
                                     onclick="myFunction()" checked />
-                                <label for="privacyAgree" class="form-check-label text-light">I agree to the terms and
-                                    <a href="#" class="link">privacy policy</a></label>
+                                <label for="privacyAgree" class="form-check-label text-light">I agree to the 
+                                    <a href="#" class="link text-dark terms">terms</a> and
+                                    <a href="#" class="link text-dark privacy">PRIVACY POLICY.</a></label>
                             </div>
                         </div>
                     </div>
@@ -797,10 +787,10 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed font-a" type="button"
+                                                <button class="btn btn-link collapsed font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseOne"
                                                     aria-expanded="false" aria-controls="collapseOne">
-                                                    <span class="faq-button small">What is Mentor in Law?</span>
+                                                    <span class="faq-button">What is Mentor in Law?</span>
                                                 </button>
                                             </h5>
                                         </div>
@@ -837,10 +827,10 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed font-a" type="button"
+                                                <button class="btn btn-link collapsed font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo">
-                                                    <span class="faq-button small">Why did we create Mentor in
+                                                    <span class="faq-button">Why did we create Mentor in
                                                         Law?</span>
                                                 </button>
                                             </h5>
@@ -890,10 +880,10 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed  font-a" type="button"
+                                                <button class="btn btn-link collapsed  font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseThree"
                                                     aria-expanded="false" aria-controls="collapseThree">
-                                                    <span class="faq-button small">Who is Mentor in Law for?</span>
+                                                    <span class="faq-button">Who is Mentor in Law for?</span>
                                                 </button>
                                             </h5>
                                         </div>
@@ -922,10 +912,10 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed  font-a" type="button"
+                                                <button class="btn btn-link collapsed  font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseFour"
                                                     aria-expanded="false" aria-controls="collapseFour">
-                                                    <span class="faq-button small">Who is the founder of Mentor in
+                                                    <span class="faq-button">Who is the founder of Mentor in
                                                         Law?</span>
                                                 </button>
                                             </h5>
@@ -948,10 +938,10 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed  font-a" type="button"
+                                                <button class="btn btn-link collapsed  font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseFive"
                                                     aria-expanded="false" aria-controls="collapseFive">
-                                                    <span class="faq-button small">What are some topics that law school
+                                                    <span class="faq-button">What are some topics that law school
                                                         doesn’t teach you?</span>
                                                 </button>
                                             </h5>
@@ -983,10 +973,10 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed  font-a" type="button"
+                                                <button class="btn btn-link collapsed  font-m" type="button"
                                                     data-toggle="collapse" data-target="#collapseSix"
                                                     aria-expanded="false" aria-controls="collapseSix">
-                                                    <span class="faq-button small">Who are some of the mentors in
+                                                    <span class="faq-button">Who are some of the mentors in
                                                         law?</span>
                                                 </button>
                                             </h5>
