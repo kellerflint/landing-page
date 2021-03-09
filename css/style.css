@@ -844,7 +844,7 @@ body {
 }
 
 .mentorship-text {
-    font-size: 1.4em;
+    font-size: 1.45em;
 }
 
 #mentorship-heading {
@@ -871,9 +871,9 @@ body {
     }
 
     .mentorship-text {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 1.3em;
+        margin-left: 28px;
+        margin-right: 28px;
+        font-size: 1.4em;
     }
     .carousel-control-prev {
         display: none;
