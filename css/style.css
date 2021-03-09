@@ -262,9 +262,6 @@ body {
     padding-left: 0;
 }
 
-#beta-mobile {
-    display: none;
-}
 
 /* Down Arrow */
 
@@ -1262,14 +1259,6 @@ a, a:hover, a:focus, a:active {
         display: block;
         margin-left: auto;
         margin-right: auto
-    }
-
-    #beta-full {
-        display: none;
-    }
-
-    #beta-mobile {
-        display: block;
     }
 
     #newsletter-btn-text {
