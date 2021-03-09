@@ -425,11 +425,11 @@ body {
 /* About */
 
 .about-text {
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
 #about-text-wrapper {
-    height: 600px;
+    height: 33em !important;
 }
 
 .about-description {
@@ -437,7 +437,7 @@ body {
 }
 
 #about-container {
-    margin-top: 80px;
+    margin-top: 75px;
 }
 
 #about-content {
@@ -864,8 +864,9 @@ body {
     outline: 0;
     border: 1px solid #FEF9F2;
 }
+
 /* For mobile phones and IPad */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     #newsletter-section {
         height: 38em;
         margin-bottom: 60px;
