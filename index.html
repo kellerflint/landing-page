@@ -26,8 +26,8 @@
     <!-- Dancing font -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=League+Script&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -301,21 +301,18 @@
             </div>
         </div>
         <div id="events-anchor"></div>
-
         <!-- -------------- -->
         <!-- Events Section -->
         <!-- -------------- -->
         <div id="events-anchor"></div>
 
-        <div class="vert-right-wrapper">
-            <p id="vert-events" class="vertical-right">
-                <span class="text-orange blur">●</span>
-                Let's democratize the practice of law
-                <span class="text-orange blur">●</span>
-            </p>
+        <button class="font-m tab-pane-coming active" onclick="openPage('coming-events-tab', this)"
+            id="defaultOpen">What's coming next</button>
+        <button class="font-m tab-pane-past" onclick="openPage('past-events-tab', this)">Previous events</button>
 
+        <!-- Coming Events -->
+        <div id="coming-events-tab" class="tabcontent shadow-5-strong">
             <div id="event-section" class="row">
-
                 <h1 id="events-heading" class="d-inline border-small-line text-orange font-le">
                     UPCOMING EVENTS
                 </h1>
@@ -324,41 +321,195 @@
                 </h2>
             </div>
 
-            <div class="row">
+            <div class="vert-right-wrapper">
+                <p id="vert-events" class="vertical-right">
+                    <span class="text-orange blur">●</span>
+                    Let's democratize the practice of law
+                    <span class="text-orange blur">●</span>
+                </p>
 
-                <div id="next-up-event-container" class="col-12 col-lg-3 ms-5 p-4 text-light">
-                    <h2><span class="text-orange font-le">07 </span>APRIL 2021</h2>
-                    <p id="next-up-event-text" class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nam iste
-                        numquam nulla
-                        eveniet obcaecati
-                        nostrum delectus labore tempore fugiat blanditiis nesciunt, a quae tenetur esse temporibus
-                        ipsum,
-                        voluptas quidem pariatur.
-                    </p>
-                    <div class="d-flex justify-content-center">
-                        <div class="event-countdown-item" id="event-days">
-                            <span class="countdown-number">1</span>
-                            <span class="countdown-number">0</span>
-                            <br />
-                            <span class="countdown-label">DAYS</span>
+                <div id="event-section" class="row">
+
+                    <h1 id="events-heading" class="d-inline border-small-line text-orange font-le">
+                        UPCOMING EVENTS
+                    </h1>
+                    <h2 id="events-subheading" class="d-inline font-m text-muted mt-3">
+                        LEARN FROM THE BEST
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div id="next-up-event-container" class="col-12 col-lg-3 ms-5 p-4 text-light">
+                        <h2><span class="text-orange font-le">07 </span>APRIL 2021</h2>
+                        <p id="next-up-event-text" class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Nam iste
+                            numquam nulla
+                            eveniet obcaecati
+                            nostrum delectus labore tempore fugiat blanditiis nesciunt, a quae tenetur esse temporibus
+                            ipsum,
+                            voluptas quidem pariatur.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <div class="event-countdown-item" id="event-days">
+                                <span class="countdown-number">1</span>
+                                <span class="countdown-number">0</span>
+                                <br />
+                                <span class="countdown-label">DAYS</span>
+                            </div>
+                            <div class="event-countdown-item" id="event-hours">
+                                <span class="countdown-number">0</span>
+                                <span class="countdown-number">4</span>
+                                <br />
+                                <span class="countdown-label">HOURS</span>
+                            </div>
+                            <div class="event-countdown-item" id="event-seconds">
+                                <span class="countdown-number">4</span>
+                                <span class="countdown-number">9</span>
+                                <br />
+                                <span class="countdown-label">MINUTES</span>
+                            </div>
                         </div>
-                        <div class="event-countdown-item" id="event-hours">
-                            <span class="countdown-number">0</span>
-                            <span class="countdown-number">4</span>
-                            <br />
-                            <span class="countdown-label">HOURS</span>
+                    </div>
+                    <div id="display-events" class="col-12 col-lg-8 ms-5">
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
                         </div>
-                        <div class="event-countdown-item" id="event-seconds">
-                            <span class="countdown-number">4</span>
-                            <span class="countdown-number">9</span>
-                            <br />
-                            <span class="countdown-label">MINUTES</span>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
                         </div>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div id="mentorship-anchor"></div>
                     </div>
                 </div>
-                <div id="display-events" class="col-12 col-lg-8 ms-5">
-                    <div class="event-item d-inline-block p-1">
+                <!--row-->
+            </div>
+        </div>
+
+
+        <!-- Past events -->
+
+        <div id="past-events-tab" class="tabcontent shadow-5-strong">
+
+            <div id="event-section" class="row">
+                <h1 id="events-heading" class="d-inline border-small-line text-orange font-le">
+                    PREVIOUS EVENTS
+                </h1>
+                <h2 id="events-subheading" class="d-inline font-m text-muted mt-3">
+                    LEARN FROM THE BEST
+                </h2>
+            </div>
+
+            <div class="row">
+                <div id="display-events-past" class="col-12 col-lg-4">
+                    <div class="past-event-item">
+                        <h3 class="d-inline font-le"><span class="text-orange">01 </span>APRIL 2021</h3><span
+                            class="event-category text-orange">Category</span>
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
+                            accusamus
+                            minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                            blanditiis autem maiores dolorem dicta.</p>
+                    </div>
+                    <div class="past-event-item ">
+                        <h3 class="d-inline font-le"><span class="text-orange">02 </span>APRIL 2021</h3><span
+                            class="event-category text-orange">Category</span>
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
+                            accusamus
+                            minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                            blanditiis autem maiores dolorem dicta.</p>
+                    </div>
+                    <div class="past-event-item">
+                        <h3 class="d-inline font-le"><span class="text-orange">03 </span>APRIL 2021</h3><span
+                            class="event-category text-orange">Category</span>
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
+                            accusamus
+                            minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                            blanditiis autem maiores dolorem dicta.</p>
+                    </div>
+                </div>
+
+                <div id="display-events-past" class="col-12 col-lg-4">
+                    <div class="past-event-item">
+                        <h3 class="d-inline font-le"><span class="text-orange">04 </span>APRIL 2021</h3><span
+                            class="event-category text-orange">Category</span>
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
+                            accusamus
+                            minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                            blanditiis autem maiores dolorem dicta.</p>
+                    </div>
+                    <div class="past-event-item">
+                        <h3 class="d-inline font-le"><span class="text-orange">05 </span>APRIL 2021</h3><span
+                            class="event-category text-orange">Category</span>
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
+                            accusamus
+                            minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                            blanditiis autem maiores dolorem dicta.</p>
+                    </div>
+                    <div class="past-event-item">
+                        <h3 class="d-inline font-le"><span class="text-orange">06 </span>APRIL 2021</h3><span
+                            class="event-category text-orange">Category</span>
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
+                            accusamus
+                            minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                            blanditiis autem maiores dolorem dicta.</p>
+                    </div>
+                </div>
+                <div id="display-events-past" class="col-12 col-lg-4">
+                    <div class="past-event-item">
                         <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
                         <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
@@ -367,8 +518,8 @@
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
                     </div>
-                    <div class="event-item d-inline-block p-1">
-                        <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                    <div class="past-event-item">
+                        <h3 class="d-inline font-le"><span class="text-orange">08 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
                         <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
                             doloremque
@@ -376,8 +527,8 @@
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
                     </div>
-                    <div class="event-item d-inline-block p-1">
-                        <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                    <div class="past-event-item">
+                        <h3 class="d-inline font-le"><span class="text-orange">09 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
                         <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
                             doloremque
@@ -385,39 +536,9 @@
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
                     </div>
-                    <div class="event-item d-inline-block p-1">
-                        <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
-                            class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
-                            doloremque
-                            accusamus
-                            minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
-                            blanditiis autem maiores dolorem dicta.</p>
-                    </div>
-                    <div class="event-item d-inline-block p-1">
-                        <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
-                            class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
-                            doloremque
-                            accusamus
-                            minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
-                            blanditiis autem maiores dolorem dicta.</p>
-                    </div>
-                    <div class="event-item d-inline-block p-1">
-                        <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
-                            class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
-                            doloremque
-                            accusamus
-                            minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
-                            blanditiis autem maiores dolorem dicta.</p>
-                    </div>
-                    <div id="mentorship-anchor"></div>
                 </div>
             </div>
-            <!--row-->
         </div>
-        <!--vert-right-wrapper-->
 
 
         <!-- ------------ -->
@@ -1141,6 +1262,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
 
     <script src="script.js"></script>
 </body>
