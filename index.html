@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=League+Script&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
- 
+
 </head>
 
 <body>
@@ -46,7 +46,7 @@
 
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/MiL-Logo.png" height="20" alt="" loading="lazy" />
+                    <img src="assets/images/MiL-Beta.png" height="20" alt="" loading="lazy" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -221,7 +221,13 @@
 
         <div id="about-anchor"></div>
 
-        <div class="row" id="about-container">
+        <div class="row vert-right-wrapper" id="about-container">
+
+            <p class="vertical-right">
+                <span class="text-orange blur">●</span>
+                Let's create opportunity together
+                <span class="text-orange blur">●</span>
+            </p>
 
             <h1 id="about-heading" class="d-inline border-small-line text-orange section-heading font-le">
                 ABOUT
@@ -233,16 +239,17 @@
             <div class="row" id="about-content">
                 <div id="about-text-wrapper" class="col-12 col-lg-4 offset-lg-1 text-center mt-3 font-a-bold">
                     <p class="about-text">
-                        Law schools are churning out lawyers of yesterday instead of tomorrow. 
+                        Law schools are churning out lawyers of yesterday instead of tomorrow.
                         There is a significant gap in what is being taught in law schools and what
-                         is needed from a lawyer in the 21st century. To bridge the gap between 
-                         studying law and practicing law, we created Mentor in Law.
+                        is needed from a lawyer in the 21st century. To bridge the gap between
+                        studying law and practicing law, we created Mentor in Law.
                     </p>
                     <p class="about-text mt-4">
-                        Mentor in Law is a <u><span class="text-orange typed-text"></span><span
-                                class="cursor">&nbsp;</span></u> platform that aims to scale 
-                                mentorship in the legal industry to democratize the practice 
-                                of law and teach what law school doesn't to shape the 21st century lawyer.
+                        Mentor in Law is <span class="text-orange typed-text underlined"></span><span
+                            class="cursor">&nbsp;</span> platform
+                        that aims to use technology to teach what law
+                        school doesn't to shape the 21st century
+                        lawyer.
                     </p>
                 </div>
                 <div class="col-0 col-lg-1 border-line"></div>
@@ -254,7 +261,8 @@
                         <div class="col-7">
                             <h3 class="text-orange font-weight-bolder spacing2 font-m">EVENTS</h3>
                             <p class="about-description">
-                                Learn practical skills from the best in the legal industry through live events, trainings, and
+                                Learn practical skills from the best in the legal industry through live events,
+                                trainings, and
                                 workshops
                             </p>
                         </div>
@@ -281,15 +289,15 @@
                             </p>
                         </div>
                     </div>
+                    <div class="row mb-5">
+                        <div class="offset-2 text-center pt-4">
+                            <h3 id="and-more-to-come" class="text-muted mt-3 font-l section-subheading">...and more
+                                coming soon!
+                            </h3>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-1"></div>
-            </div>
-        </div>
-        <div id="events-anchor"></div>
-        <div class="row more-coming-marg-bottom">
-            <div class="col-12 col-lg-4 offset-lg-7 text-center">
-                <h3 id="and-more-to-come" class="text-muted font-l section-subheading">...and more coming soon!
-                </h3>
             </div>
         </div>
         <div id="events-anchor"></div>
@@ -298,112 +306,139 @@
         <!-- -------------- -->
         <div id="events-anchor"></div>
 
-
-
-        <button class="font-m tab-pane-coming active" onclick="openPage('coming-events-tab', this)" id="defaultOpen">What's coming next</button>
-        <button class="font-m tab-pane-past" onclick="openPage('past-events-tab', this)" >Previous events</button>  
+        <button class="font-m tab-pane-coming active" onclick="openPage('coming-events-tab', this)"
+            id="defaultOpen">What's coming next</button>
+        <button class="font-m tab-pane-past" onclick="openPage('past-events-tab', this)">Previous events</button>
 
         <!-- Coming Events -->
-       <div id="coming-events-tab" class="tabcontent shadow-5-strong">
-        <div id="event-section" class="row">
-            <h1 id="events-heading" class="d-inline border-small-line text-orange font-le">
-                UPCOMING EVENTS
-            </h1>
-            <h2 id="events-subheading" class="d-inline font-m text-muted mt-3">
-                LEARN FROM THE BEST
-            </h2>
-        </div>
+        <div id="coming-events-tab" class="tabcontent shadow-5-strong">
+            <div id="event-section" class="row">
+                <h1 id="events-heading" class="d-inline border-small-line text-orange font-le">
+                    UPCOMING EVENTS
+                </h1>
+                <h2 id="events-subheading" class="d-inline font-m text-muted mt-3">
+                    LEARN FROM THE BEST
+                </h2>
+            </div>
 
-        <div class="row">
-            <div id="next-up-event-container" class="col-12 col-lg-3 ms-5 p-4 text-light">
-                <h2 class="font-le"><span class="text-orange font-le">07 </span>APRIL 2021</h2>
-                <p id="next-up-event-text" class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam iste
-                    numquam nulla
-                    eveniet obcaecati
-                    nostrum delectus labore tempore fugiat blanditiis nesciunt, a quae tenetur esse temporibus ipsum,
-                    voluptas quidem pariatur.
+            <div class="vert-right-wrapper">
+                <p id="vert-events" class="vertical-right">
+                    <span class="text-orange blur">●</span>
+                    Let's democratize the practice of law
+                    <span class="text-orange blur">●</span>
                 </p>
-                <div class="d-flex justify-content-center">
-                    <div class="event-countdown-item" id="event-days">
-                        <span class="countdown-number">1</span>
-                        <span class="countdown-number">0</span>
-                        <br />
-                        <span class="countdown-label">DAYS</span>
+
+                <div id="event-section" class="row">
+
+                    <h1 id="events-heading" class="d-inline border-small-line text-orange font-le">
+                        UPCOMING EVENTS
+                    </h1>
+                    <h2 id="events-subheading" class="d-inline font-m text-muted mt-3">
+                        LEARN FROM THE BEST
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div id="next-up-event-container" class="col-12 col-lg-3 ms-5 p-4 text-light">
+                        <h2><span class="text-orange font-le">07 </span>APRIL 2021</h2>
+                        <p id="next-up-event-text" class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Nam iste
+                            numquam nulla
+                            eveniet obcaecati
+                            nostrum delectus labore tempore fugiat blanditiis nesciunt, a quae tenetur esse temporibus
+                            ipsum,
+                            voluptas quidem pariatur.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <div class="event-countdown-item" id="event-days">
+                                <span class="countdown-number">1</span>
+                                <span class="countdown-number">0</span>
+                                <br />
+                                <span class="countdown-label">DAYS</span>
+                            </div>
+                            <div class="event-countdown-item" id="event-hours">
+                                <span class="countdown-number">0</span>
+                                <span class="countdown-number">4</span>
+                                <br />
+                                <span class="countdown-label">HOURS</span>
+                            </div>
+                            <div class="event-countdown-item" id="event-seconds">
+                                <span class="countdown-number">4</span>
+                                <span class="countdown-number">9</span>
+                                <br />
+                                <span class="countdown-label">MINUTES</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="event-countdown-item" id="event-hours">
-                        <span class="countdown-number">0</span>
-                        <span class="countdown-number">4</span>
-                        <br />
-                        <span class="countdown-label">HOURS</span>
+                    <div id="display-events" class="col-12 col-lg-8 ms-5">
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div class="event-item d-inline-block p-1">
+                            <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
+                                class="event-category text-orange">Category</span>
+                            <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                                doloremque
+                                accusamus
+                                minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
+                                blanditiis autem maiores dolorem dicta.</p>
+                        </div>
+                        <div id="mentorship-anchor"></div>
                     </div>
-                    <div class="event-countdown-item" id="event-seconds">
-                        <span class="countdown-number">4</span>
-                        <span class="countdown-number">9</span>
-                        <br />
-                        <span class="countdown-label">MINUTES</span>
-                    </div>
                 </div>
-            </div>
-            <div id="display-events" class="col-12 col-lg-8 ms-5">
-                <div class="event-item d-inline-block p-1">
-                    <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
-                        class="event-category text-orange">Category</span>
-                    <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
-                        accusamus
-                        minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
-                        blanditiis autem maiores dolorem dicta.</p>
-                </div>
-                <div class="event-item d-inline-block p-1">
-                    <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
-                        class="event-category text-orange">Category</span>
-                    <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
-                        accusamus
-                        minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
-                        blanditiis autem maiores dolorem dicta.</p>
-                </div>
-                <div class="event-item d-inline-block p-1">
-                    <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
-                        class="event-category text-orange">Category</span>
-                    <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
-                        accusamus
-                        minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
-                        blanditiis autem maiores dolorem dicta.</p>
-                </div>
-                <div class="event-item d-inline-block p-1">
-                    <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
-                        class="event-category text-orange">Category</span>
-                    <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
-                        accusamus
-                        minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
-                        blanditiis autem maiores dolorem dicta.</p>
-                </div>
-                <div class="event-item d-inline-block p-1">
-                    <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
-                        class="event-category text-orange">Category</span>
-                    <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
-                        accusamus
-                        minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
-                        blanditiis autem maiores dolorem dicta.</p>
-                </div>
-                <div class="event-item d-inline-block p-1">
-                    <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
-                        class="event-category text-orange">Category</span>
-                    <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
-                        accusamus
-                        minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
-                        blanditiis autem maiores dolorem dicta.</p>
-                </div>
-                <div id="mentorship-anchor"></div>
+                <!--row-->
             </div>
         </div>
-       </div>
 
 
-<!-- Past events -->
-    
-       <div id="past-events-tab" class="tabcontent shadow-5-strong">
-        
+        <!-- Past events -->
+
+        <div id="past-events-tab" class="tabcontent shadow-5-strong">
+
             <div id="event-section" class="row">
                 <h1 id="events-heading" class="d-inline border-small-line text-orange font-le">
                     PREVIOUS EVENTS
@@ -418,7 +453,8 @@
                     <div class="past-event-item">
                         <h3 class="d-inline font-le"><span class="text-orange">01 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
                             accusamus
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
@@ -426,7 +462,8 @@
                     <div class="past-event-item ">
                         <h3 class="d-inline font-le"><span class="text-orange">02 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
                             accusamus
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
@@ -434,7 +471,8 @@
                     <div class="past-event-item">
                         <h3 class="d-inline font-le"><span class="text-orange">03 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
                             accusamus
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
@@ -445,7 +483,8 @@
                     <div class="past-event-item">
                         <h3 class="d-inline font-le"><span class="text-orange">04 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
                             accusamus
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
@@ -453,7 +492,8 @@
                     <div class="past-event-item">
                         <h3 class="d-inline font-le"><span class="text-orange">05 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
                             accusamus
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
@@ -461,7 +501,8 @@
                     <div class="past-event-item">
                         <h3 class="d-inline font-le"><span class="text-orange">06 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
                             accusamus
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
@@ -471,7 +512,8 @@
                     <div class="past-event-item">
                         <h3 class="d-inline font-le"><span class="text-orange">07 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
                             accusamus
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
@@ -479,7 +521,8 @@
                     <div class="past-event-item">
                         <h3 class="d-inline font-le"><span class="text-orange">08 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
                             accusamus
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
@@ -487,14 +530,15 @@
                     <div class="past-event-item">
                         <h3 class="d-inline font-le"><span class="text-orange">09 </span>APRIL 2021</h3><span
                             class="event-category text-orange">Category</span>
-                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis, doloremque
+                        <p class="font-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis,
+                            doloremque
                             accusamus
                             minima vel, numquam eligendi ut tempore hic iure labore quo quisquam delectus cupiditate
                             blanditiis autem maiores dolorem dicta.</p>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
 
 
         <!-- ------------ -->
@@ -620,7 +664,12 @@
         <!-- MENTORSHIP PROGRAM -->
         <!-- ------------------ -->
 
-        <div class="row my-5 d-flex">
+        <div class="row my-5 d-flex vert-right-wrapper">
+            <p id="vert-membership" class="vertical-right">
+                <span class="text-orange blur">●</span>
+                Let's demystify the legal industry
+                <span class="text-orange blur">●</span>
+            </p>
             <div class="col-12 col-lg-4 offset-0 offset-lg-1 text-center">
                 <h3 class="mentorship-program-subtext font-m d-none d-lg-inline-block">COMING SOON</h3>
                 <h1 id="mentorship-heading" class="section-heading text-orange my-3 font-le">MENTORSHIP <br /> PROGRAM
@@ -673,8 +722,8 @@
                 </div>
                 <form
                     action="https://greenriver.us1.list-manage.com/subscribe/post?u=7c31bd0d744382f414f09f7c8&amp;id=570170e803"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                    target="_blank" novalidatename="newsletter-form" class="validate row d-flex justify-content-center mt-5"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+                    novalidatename="newsletter-form" class="validate row d-flex justify-content-center mt-5"
                     onsubmit="return validateForm()">
 
                     <div class="col-1 offset-1 d-none d-lg-block">
@@ -683,8 +732,8 @@
                     <div class="col-lg-3">
                         <!-- Name input -->
                         <div class="group form-outline">
-                            <input type="text" name="NAME" class="newsletter"><span
-                                class="highlight"></span><span class="bar"></span>
+                            <input type="text" name="NAME" class="newsletter"><span class="highlight"></span><span
+                                class="bar"></span>
                             <label class="newsletter-label font-m font-weight-bold">Name</label>
                             <span id="error-name" class="font-beige"></span>
                         </div>
@@ -692,23 +741,25 @@
                     <div class="col-lg-3">
                         <!-- Email input -->
                         <div class="group form-outline">
-                            <input type="email" name="EMAIL" class="newsletter"><span
-                                class="highlight"></span><span class="bar"></span>
+                            <input type="email" name="EMAIL" class="newsletter"><span class="highlight"></span><span
+                                class="bar"></span>
                             <label class="newsletter-label font-m font-weight-bold">Email</label>
                             <span id="error-email" class="font-beige"></span>
                         </div>
                     </div>
                     <div class="col-lg-1">
                         <button type="submit" class="submit d-none d-lg-inline-block"><i class="fa fa-arrow-right"></i>
-                            
+
                         </button>
                     </div>
                     <div class="row">
                         <div class="col-12 privacy-agreement">
                             <!-- Checked checkbox -->
                             <div class="form-check text-left">
-                                <input class="form-check-input d-inline" type="checkbox" value="" id="privacyAgree" onclick="myFunction()" checked />
-                                    <label for="privacyAgree" class="form-check-label text-light">I agree to the terms and <a href="#" class="link">privacy policy</a></label>
+                                <input class="form-check-input d-inline" type="checkbox" value="" id="privacyAgree"
+                                    onclick="myFunction()" checked />
+                                <label for="privacyAgree" class="form-check-label text-light">I agree to the terms and
+                                    <a href="#" class="link">privacy policy</a></label>
                             </div>
                         </div>
                     </div>
@@ -724,7 +775,13 @@
         <!-- FAQ -->
         <!-- --- -->
 
-        <section class="faq">
+        <section class="faq vert-right-wrapper">
+            <p id="vert-faq" class="vertical-right">
+                <span class="text-orange blur">●</span>
+                Let's humanize the law
+                <span class="text-orange blur">●</span>
+            </p>
+
             <div class="section-margin mb-5">
                 <div class="row d-flex justify-content-center">
                     <h1 class="text-center mb-5 font-r font-le text-orange">FAQ</h1>
@@ -1046,10 +1103,15 @@
                     <h5 class="text-uppercase text-center footer-text font-le">Mentor in Law</h5>
 
                     <p class="text-center footer-text font-l">
-                        Mentor in Law is a digital learning platform that aims to scale 
-                        mentorship in the legal industry to democratize the practice of 
+                        Mentor in Law is a digital learning platform that aims to scale
+                        mentorship in the legal industry to democratize the practice of
                         law and teach what law school doesn't to shape the 21st century lawyer.
                     </p>
+
+                    <div class="text-center font-l pt-2 me-lg-5">
+                        <a href="#newsletter-anchor">
+                            <button type="button" class="btn bg-orange text-offwhite">SUBSCRIBE</button></a>
+                    </div>
                 </div>
                 <div id="links-footer" class="col-12 col-lg-2 py-5">
                     <h5 class="text-uppercase font-le">Links</h5>
@@ -1105,8 +1167,8 @@
                     </ul>
                 </div>
                 <div class="col-0 col-lg-3 d-none d-lg-inline-block">
-                    <div class="vert-wrapper">
-                        <h5 class="text-uppercase font-le vertical" id="events-title">
+                    <div class="vert-left-wrapper">
+                        <h5 class="text-uppercase font-le vertical-left" id="events-title">
                             Upcoming events
                         </h5>
 
@@ -1200,7 +1262,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-        
+
 
     <script src="script.js"></script>
 </body>
