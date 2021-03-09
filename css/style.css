@@ -40,6 +40,13 @@ body {
     border-right: 3px solid rgb(166, 166, 166);
 }
 
+.orange-border {
+    border-style: solid;
+    border-color: #f1491f;
+    border-width: 3px;
+    border-radius: .7em;
+}
+
 .underlined {
     border-bottom: .15em solid #f1491f;
 }
