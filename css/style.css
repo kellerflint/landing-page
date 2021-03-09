@@ -28,6 +28,10 @@ body {
     color: #FEF9F2;
 }
 
+.nav-text-size {
+    font-size: .83em;
+}
+
 .border-line {
     border-right: 4px solid rgb(166, 166, 166);
 }
