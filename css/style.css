@@ -68,7 +68,7 @@ body {
 
 .vertical-right {
     font-family: 'Montserrat';
-    font-size: .9rem;
+    font-size: .7rem;
     position: absolute;
     text-align: center;
     transform: rotate(90deg) translateX(calc(50% - 7px));
