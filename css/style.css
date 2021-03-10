@@ -68,7 +68,7 @@ body {
 
 .vertical-right {
     font-family: 'Montserrat';
-    font-size: .9rem;
+    font-size: .7rem;
     position: absolute;
     text-align: center;
     transform: rotate(90deg) translateX(calc(50% - 7px));
@@ -133,7 +133,7 @@ body {
 
 .link:hover {
     text-decoration: underline;
-    color: #f1491f !important;
+    color: black !important;
 }
 
 @font-face {
@@ -266,9 +266,9 @@ body {
 
 #subscribe-for-free {
     font-family: 'buffalo';
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
-    width: 160px;
+    width: 170px;
     padding-left: 0;
 }
 
@@ -536,6 +536,10 @@ body {
 #event-section {
     margin-bottom: 2em;
     box-sizing: content-box;
+}
+
+#events-container {
+    margin-top: 5em !important;
 }
 
 #events-heading {
@@ -1056,6 +1060,10 @@ a, a:hover, a:focus, a:active {
     padding: 0;
 }
 
+.card {
+    border-radius: 10px;
+}
+
 .faq .section-title {
     margin-bottom: 54px;
 }
@@ -1089,7 +1097,7 @@ a, a:hover, a:focus, a:active {
     font-size: 1.17em;
     text-decoration: none;
     padding: 0 30px 0 70px;
-    height: 5em;
+    height: 4em;
     display: block;
     width: 100%;
     color: rgba(30, 48, 86, 0.8);
@@ -1126,7 +1134,7 @@ a, a:hover, a:focus, a:active {
     border-radius: 10px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: 1px solid rgba(97, 125, 255, 0.2);
+    border: 1px solid rgba(161, 161, 161, 0.2);
 }
 
 .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
