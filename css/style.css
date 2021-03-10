@@ -133,7 +133,7 @@ body {
 
 .link:hover {
     text-decoration: underline;
-    color: #f1491f !important;
+    color: black !important;
 }
 
 @font-face {
