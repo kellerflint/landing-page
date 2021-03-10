@@ -336,6 +336,7 @@ $(window, document, undefined).ready(function () {
     });
 
 });
+
 // Newsletter past and coming events tabs 
 function openPage(pageName,elmnt,color) {
     var i, tabcontent, tablinks;
