@@ -28,12 +28,23 @@ body {
     color: #FEF9F2;
 }
 
+.nav-text-size {
+    font-size: .83em;
+}
+
 .border-line {
     border-right: 4px solid rgb(166, 166, 166);
 }
 
 .border-small-line {
     border-right: 3px solid rgb(166, 166, 166);
+}
+
+.orange-border {
+    border-style: solid;
+    border-color: #f1491f;
+    border-width: 3px;
+    border-radius: .7em;
 }
 
 .underlined {
@@ -107,14 +118,14 @@ body {
 /* Newsletter icon */
 
 #newsletter-icon {
-    border: 2px solid #FEF9F2;
+    border: 1px solid #c73814;
     background-color:#f1491f;
     border-radius: 100%;
-    width: 4em;
+    width: 3em;
     position: fixed;
     right: 1em;
     bottom: 1em;
-    box-shadow: 2px 2px 3px #999;
+    box-shadow: 0px 1px 3px #999;
     z-index: 1;
 }
 
@@ -261,9 +272,6 @@ body {
     padding-left: 0;
 }
 
-#beta-mobile {
-    display: none;
-}
 
 /* Down Arrow */
 
@@ -1299,14 +1307,6 @@ a, a:hover, a:focus, a:active {
         display: block;
         margin-left: auto;
         margin-right: auto
-    }
-
-    #beta-full {
-        display: none;
-    }
-
-    #beta-mobile {
-        display: block;
     }
 
     #newsletter-btn-text {
